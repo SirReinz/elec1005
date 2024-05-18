@@ -1165,7 +1165,7 @@
       "MetaDataIDKey": "",
       "Name": "logout_Group_9",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
