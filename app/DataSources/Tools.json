@@ -36,7 +36,6 @@
       "tool_name": "tool_name",
       "tool2": "location",
       "tools": "amount",
-      "type": "type",
       "types": "types",
       "was_called": "was_called",
       "was_called#Id": "was_called Id"
