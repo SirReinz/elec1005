@@ -66,7 +66,7 @@
       "MetaDataIDKey": "",
       "Name": "+",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 18,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -378,7 +378,7 @@
       "MetaDataIDKey": "",
       "Name": "Add button",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 14,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -626,7 +626,7 @@
       "MetaDataIDKey": "",
       "Name": "Current Project discussions",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -954,7 +954,7 @@
       "MetaDataIDKey": "",
       "Name": "Discussion 2024",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1266,7 +1266,7 @@
       "MetaDataIDKey": "",
       "Name": "Discussion main page",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1870,7 +1870,7 @@
       "MetaDataIDKey": "",
       "Name": "Ellipse 1_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3056,7 +3056,7 @@
       "MetaDataIDKey": "",
       "Name": "Go Back ➤",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3431,7 +3431,7 @@
       "MetaDataIDKey": "",
       "Name": "goBack_group",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3703,7 +3703,7 @@
       "MetaDataIDKey": "",
       "Name": "goBack_Group",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 21,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4087,7 +4087,7 @@
       "MetaDataIDKey": "",
       "Name": "Group 3 2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4399,7 +4399,7 @@
       "MetaDataIDKey": "",
       "Name": "Hello,_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4712,7 +4712,7 @@
       "MetaDataIDKey": "",
       "Name": "Image1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4915,7 +4915,7 @@
       "MetaDataIDKey": "",
       "Name": "Image2_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5127,7 +5127,7 @@
       "MetaDataIDKey": "",
       "Name": "Line 3 (1) 1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5379,7 +5379,7 @@
       "MetaDataIDKey": "",
       "Name": "logout_Group_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 20,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6199,7 +6199,7 @@
       "MetaDataIDKey": "",
       "Name": "Microphone",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 13,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6420,14 +6420,7 @@
         "PressedBorderColor",
         "PressedColor",
         "PressedFill",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "OnSelect",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "OnSelect",
         "AutoDisableOnSelect",
         "Tooltip",
         "ContentLanguage",
@@ -6452,7 +6445,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 16,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6768,7 +6761,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 14,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7084,7 +7077,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 15,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7430,7 +7423,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Label_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7697,14 +7690,7 @@
       "ControlPropertyState": [
         "BorderColor",
         "BorderStyle",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "BorderThickness",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "BorderThickness",
         "Default",
         "DisabledBorderColor",
         "DisabledColor",
@@ -7712,14 +7698,7 @@
         "DisabledSelectionColor",
         "DisabledSelectionFill",
         "DisplayMode",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Fill",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Fill",
         "Color",
         "Font",
         "LineHeight",
@@ -7774,7 +7753,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_ListBox_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8073,14 +8052,7 @@
         "X",
         "Y",
         "ZIndex",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Please Select a Discussion topic to view discussion\"",
-          "InvariantPropertyName": "Text",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Text",
         "Visible",
         "Overflow",
         "FocusedBorderThickness",
@@ -8119,7 +8091,7 @@
       "MetaDataIDKey": "",
       "Name": "Please Select a Discussion topic to view discussion",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8447,7 +8419,7 @@
       "MetaDataIDKey": "",
       "Name": "Project overview",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8750,7 +8722,7 @@
       "MetaDataIDKey": "",
       "Name": "Rectangle 10",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8928,7 +8900,7 @@
       "MetaDataIDKey": "",
       "Name": "Rectangle 11",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9106,7 +9078,7 @@
       "MetaDataIDKey": "",
       "Name": "Rectangle 5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9284,7 +9256,7 @@
       "MetaDataIDKey": "",
       "Name": "Rectangle 7",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9462,7 +9434,7 @@
       "MetaDataIDKey": "",
       "Name": "Rectangle 8",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9640,7 +9612,7 @@
       "MetaDataIDKey": "",
       "Name": "Rectangle 9",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 12,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10110,15 +10082,7 @@
         "Size",
         "Orientation",
         "LoadingSpinner",
-        "ImagePosition",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "OnVisible",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        }
+        "ImagePosition"
       ],
       "IsAutoGenerated": false,
       "IsComponentDefinition": false,
@@ -10171,11 +10135,6 @@
         {
           "Category": "Design",
           "PropertyName": "ImagePosition",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Behavior",
-          "PropertyName": "OnVisible",
           "RuleProviderType": "Unknown"
         }
       ],
