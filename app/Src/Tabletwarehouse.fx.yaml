@@ -89,11 +89,11 @@ Tabletwarehouse As screen:
         PaddingTop: =0
         Size: =30
         Text: |-
-            ="Currently searching: " & search_name
+            ="Currently searching:" & Char(10) & search_name
         VerticalAlign: =VerticalAlign.Top
-        Width: =476
-        X: =100
-        Y: =268
+        Width: =659
+        X: =91
+        Y: =253
         ZIndex: =4
 
     "'Recent searches' As label":
@@ -284,7 +284,7 @@ Tabletwarehouse As screen:
                     LookUp(Tools, tool_name = search_Input.Text),
                     { called: "True" }
                 );
-                Set(cube_location, LookUp(Tools, tool_name = search_Input.Text).location) + 
+                Set(cube_location, LookUp(Tools, tool_name = search_Input.Text).location) +
                 Set(search_name, LookUp(Tools, tool_name = search_Input.Text).tool_name) + 
                 Reset(search_Input),
                 Notify("Tool not found", NotificationType.Error) + 
@@ -349,8 +349,8 @@ Tabletwarehouse As screen:
         SelectMultiple: =false
         Size: =25
         Width: =984
-        X: =837
-        Y: =541
+        X: =835
+        Y: =553
         ZIndex: =70
 
     Group1 As group:

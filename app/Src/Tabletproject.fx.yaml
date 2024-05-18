@@ -145,7 +145,8 @@ Tabletproject As screen:
         PaddingTop: =0
         Size: =33.75
         Text: |-
-            ="Estimated Delay: 3 days"
+            ="Estimated Delay: " &
+            First(ListBox1.SelectedItems).'delay'
         VerticalAlign: =VerticalAlign.Top
         Width: =538
         X: =406
@@ -452,7 +453,7 @@ Tabletproject As screen:
         Text: =
         VerticalAlign: =VerticalAlign.Top
         Width: =258
-        X: =67
+        X: =74
         Y: =147
         ZIndex: =84
 
