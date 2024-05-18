@@ -5123,17 +5123,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.isVisible"
+                  "fullyQualifiedName": "App.username"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.isVisible",
+                  "fullyQualifiedName": "App.username",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "isVisible",
+                "member": "username",
                 "module": "App",
                 "type": "App"
               }
@@ -5153,17 +5153,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.username"
+                  "fullyQualifiedName": "App.isVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.username",
+                  "fullyQualifiedName": "App.isVisible",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "username",
+                "member": "isVisible",
                 "module": "App",
                 "type": "App"
               }
