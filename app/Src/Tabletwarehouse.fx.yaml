@@ -337,8 +337,8 @@ Tabletwarehouse As screen:
         SelectMultiple: =false
         Size: =25
         Width: =984
-        X: =837
-        Y: =541
+        X: =835
+        Y: =553
         ZIndex: =70
 
     Group1 As group:
