@@ -224,20 +224,21 @@ Tablettoolbox As screen:
         Height: =402
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        OnSelect: =Navigate(Tabletdiscussion)
         PaddingBottom: =7
         PaddingLeft: =32
         PaddingRight: =32
         PaddingTop: =6
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
         RadiusBottomLeft: =50
         RadiusBottomRight: =50
         RadiusTopLeft: =50
         RadiusTopRight: =50
         Size: =24
-        Text: ="Button"
+        Text: =
         Width: =402
         X: =1425
         Y: =329.5
@@ -256,21 +257,22 @@ Tablettoolbox As screen:
         FontWeight: =FontWeight.Semibold
         Height: =402
         HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        HoverColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        OnSelect: =Navigate(Tabletwarehouse)
         PaddingBottom: =7
         PaddingLeft: =32
         PaddingRight: =32
         PaddingTop: =6
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
         RadiusBottomLeft: =50
         RadiusBottomRight: =50
         RadiusTopLeft: =50
         RadiusTopRight: =50
         Size: =24
-        Text: ="Button"
+        Text: =
         Width: =402
         X: =290
         Y: =329.5
@@ -290,20 +292,21 @@ Tablettoolbox As screen:
         Height: =402
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        OnSelect: =Navigate(Tabletselection)
         PaddingBottom: =7
         PaddingLeft: =32
         PaddingRight: =32
         PaddingTop: =6
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
         RadiusBottomLeft: =50
         RadiusBottomRight: =50
         RadiusTopLeft: =50
         RadiusTopRight: =50
         Size: =24
-        Text: ="Button"
+        Text: =
         Width: =402
         X: =848
         Y: =329.5
@@ -333,7 +336,7 @@ Tablettoolbox As screen:
         Y: =40
         ZIndex: =20
 
-        "'Ellipse 1_6' As image":
+        "'Ellipse 1_4' As image":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -351,7 +354,7 @@ Tablettoolbox As screen:
             Y: =7
             ZIndex: =16
 
-        "'Hello,_5' As label":
+        "'Hello,_3' As label":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             Color: =RGBA(0, 0, 0, 1)
@@ -372,7 +375,7 @@ Tablettoolbox As screen:
             Y: =34
             ZIndex: =17
 
-        msft_Label_6 As label:
+        msft_Label_4 As label:
             Align: =Align.Right
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
@@ -393,4 +396,11 @@ Tablettoolbox As screen:
             X: =1301
             Y: =109
             ZIndex: =18
+
+    logout_Group_3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =20
 
