@@ -70,19 +70,19 @@ Tabletwarehouse As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         FontWeight: =FontWeight.Semibold
-        Height: =78
-        LineHeight: =0.8666667
+        Height: =103
+        LineHeight: =1.1
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
-        Size: =33.75
+        Size: =30
         Text: |-
             ="Currently searching: " & search_name
         VerticalAlign: =VerticalAlign.Top
-        Width: =460
-        X: =74
-        Y: =280
+        Width: =476
+        X: =100
+        Y: =268
         ZIndex: =4
 
     "'Recent searches' As label":
