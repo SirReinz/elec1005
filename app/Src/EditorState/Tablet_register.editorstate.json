@@ -352,7 +352,7 @@
       "MetaDataIDKey": "",
       "Name": "Group 2 6_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -644,7 +644,7 @@
       "MetaDataIDKey": "",
       "Name": "Header 1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1520,7 +1520,7 @@
       "MetaDataIDKey": "",
       "Name": "Line 2 1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1812,7 +1812,7 @@
       "MetaDataIDKey": "",
       "Name": "Login 1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2122,7 +2122,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_26",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2452,7 +2452,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_28",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3077,7 +3077,7 @@
       "MetaDataIDKey": "",
       "Name": "password_new",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3814,7 +3814,7 @@
       "MetaDataIDKey": "",
       "Name": "username_new",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

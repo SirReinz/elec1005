@@ -112,17 +112,17 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "678a0dc6-9c60-4d33-8324-1fda1435216d",
-    "Id": "f360df9a-4910-4599-8a85-a0f33f69f7de",
+    "Id": "28360b64-f623-4391-abf3-a77ae8ad6320",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "",
     "ManualOfflineProfileId": "",
-    "Name": "Assignment 2 group 14",
+    "Name": "Assignment%2B2%2Bgroup%2B14%2B%28No%2BGithub%29.msapp",
     "OriginatingVersion": "1.326",
     "ParserErrorCount": 0,
     "ShowStatusBar": false
   },
   "PublishInfo": {
-    "AppName": "908a6ff3-2c65-4ceb-9197-c1809435232c",
+    "AppName": "4c6d9917-1d7f-410a-8c0f-2debf98fae65",
     "BackgroundColor": "RGBA(54,176,75,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "FavoriteStarFill",
@@ -130,7 +130,7 @@
     "PublishDataLocally": false,
     "PublishResourcesLocally": false,
     "PublishTarget": "player",
-    "UserLocale": "zh-CN"
+    "UserLocale": "en-US"
   },
   "ScreenOrder": [
     "Tabletlogin",
