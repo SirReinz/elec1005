@@ -397,10 +397,3 @@ Tablettoolbox As screen:
             Y: =109
             ZIndex: =18
 
-    logout_Group_3 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =20
-
