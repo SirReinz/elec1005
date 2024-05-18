@@ -78,10 +78,9 @@ Tabletwarehouse As screen:
         PaddingTop: =0
         Size: =33.75
         Text: |-
-            ="Currently searching:
-            N/A"
+            ="Currently searching: " & search_name
         VerticalAlign: =VerticalAlign.Top
-        Width: =471
+        Width: =460
         X: =74
         Y: =280
         ZIndex: =4
@@ -161,7 +160,7 @@ Tabletwarehouse As screen:
         Y: =482
         ZIndex: =8
 
-    TextInputSource As text:
+    search_Input As text:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =2
         Color: =RGBA(166, 166, 166, 1)
@@ -178,8 +177,8 @@ Tabletwarehouse As screen:
         LineHeight: =1.177
         OnChange: |-
             =If(
-                !IsBlank(TextInputSource.Text),
-                Collect(RecentSearches, TextInputSource.Text);
+                !IsBlank(search_Input.Text),
+                Collect(RecentSearches, search_Input.Text);
                 If(CountRows(RecentSearches) > 5, Remove(RecentSearches, First(RecentSearches)))
             );
         PaddingBottom: =15
@@ -195,65 +194,9 @@ Tabletwarehouse As screen:
         RadiusTopRight: =0
         Size: =22.5
         Width: =510
-        X: =845
-        Y: =348
-        ZIndex: =10
-
-    "'recent searches_Container_Vertical' As groupContainer.manualLayoutContainer":
-        Height: =352
-        LayoutMode: ="manual"
-        Width: =1060
         X: =835
-        Y: =538
-        ZIndex: =11
-
-        msft_ListBox_4 As listbox:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            Color: =RGBA(51, 51, 51, 1)
-            Default: ="Interchangeable Head (Multi-Bit) screwdriver"
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            DisabledSelectionColor: =RGBA(166, 166, 166, 1)
-            DisabledSelectionFill: =RGBA(220, 220, 220, 1)
-            Fill: =RGBA(210, 208, 206, 1)
-            FontWeight: =FontWeight.Semibold
-            Height: =818
-            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(212, 212, 212, 1)
-            Items: =["Interchangeable Head (Multi-Bit) screwdriver", "Magnetic bit holder for Interchangeable Head screwd...", "Tynulox 1" OD 304 Stainless Steel Tube"]
-            LineHeight: =1.13
-            PaddingBottom: =6
-            PaddingLeft: =6
-            PaddingRight: =6
-            PaddingTop: =6
-            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =RGBA(0, 120, 212, 1)
-            SelectionColor: =RGBA(210, 208, 206, 1)
-            SelectionFill: =RGBA(0, 120, 212, 1)
-            Size: =18.75
-            Width: =1044
-            X: =16
-            ZIndex: =21
-
-        TextLabelDestination As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Height: =240
-            OnSelect: =Concat(RecentSearches, Value & ", ")
-            Size: =30
-            Text: =""
-            Width: =700
-            X: =16
-            ZIndex: =22
+        Y: =340
+        ZIndex: =10
 
     "'Line 3 (1) 1_1' As image":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -361,7 +304,7 @@ Tabletwarehouse As screen:
             Y: =163
             ZIndex: =15
 
-    msft_Button_26 As button:
+    research_Button As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
@@ -377,20 +320,19 @@ Tabletwarehouse As screen:
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
         OnSelect: |-
             =If(
-                !IsBlank(
-                    LookUp(
-                        user_info,
-                        user_name = username_input.Text && password = password_input.Text
-                    )
-                ),
-                Navigate(Tabletselection) + Reset(password_input) + Set(
-                    username,
-                    username_input.Text
-                ),
-                Set(
-                    isVisible,
-                    true
-                ) + Reset(password_input)
+                !IsBlank(LookUp(Tools, tool_name = search_Input.Text)),
+                Patch(
+                    Tools,
+                    LookUp(Tools, tool_name = search_Input.Text),
+                    { called: "True" }
+                );
+                Set(cube_location, LookUp(Tools, tool_name = search_Input.Text).location) + 
+                Set(search_name, LookUp(Tools, tool_name = search_Input.Text).tool_name) + 
+                Reset(search_Input),
+                Notify("Tool not found", NotificationType.Error) + 
+                Set(cube_location, "") + 
+                Reset(search_Input) + 
+                Set(search_name, "N/A")
             )
         PaddingBottom: =7
         PaddingLeft: =32
@@ -406,8 +348,8 @@ Tabletwarehouse As screen:
         Size: =15
         Text: ="click to research"
         Width: =222
-        X: =1392
-        Y: =348
+        X: =1366
+        Y: =340
         ZIndex: =38
 
     Group1 As group:
@@ -427,8 +369,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =100.5
             Y: =381
@@ -444,8 +390,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =100.5
             Y: =413
@@ -461,8 +411,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =100.5
             Y: =445.3
@@ -478,8 +432,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =100.5
             Y: =512
@@ -495,8 +453,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =100.5
             Y: =478
@@ -512,8 +474,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =100.5
             Y: =545
@@ -529,8 +495,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =180
             Y: =381
@@ -546,8 +516,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =180
             Y: =413
@@ -563,8 +537,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =180
             Y: =445.3
@@ -580,8 +558,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =180
             Y: =512
@@ -597,8 +579,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =180
             Y: =478
@@ -614,8 +600,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =180
             Y: =545
@@ -631,8 +621,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =257.7
             Y: =381
@@ -648,8 +642,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =257.7
             Y: =413
@@ -665,8 +663,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =257.7
             Y: =445.3
@@ -682,8 +684,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =257.7
             Y: =512
@@ -699,8 +705,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =257.7
             Y: =478
@@ -716,8 +726,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =257.7
             Y: =545
@@ -733,8 +747,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =100.5
             Y: =628
@@ -750,8 +768,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =100.5
             Y: =661
@@ -767,8 +789,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =100.5
             Y: =694
@@ -784,8 +810,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =100.5
             Y: =727
@@ -801,8 +831,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =185
             Y: =628
@@ -818,8 +852,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =185
             Y: =661
@@ -835,8 +873,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =185
             Y: =694
@@ -852,8 +894,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =185
             Y: =727
@@ -869,8 +915,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =268
             Y: =628
@@ -886,8 +936,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =268
             Y: =661
@@ -903,8 +957,12 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =344.7
             Y: =628
@@ -920,10 +978,42 @@ Tabletwarehouse As screen:
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Visible: |
-                =false
+            Visible: |-
+                =If(
+                    cube_location = "location A",
+                    true,
+                    false
+                )
             Width: =35.5
             X: =344.7
             Y: =661
             ZIndex: =69
+
+    ListBox2 As listbox:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisabledSelectionColor: =RGBA(166, 166, 166, 1)
+        DisabledSelectionFill: =RGBA(220, 220, 220, 1)
+        Font: =Font.'Segoe UI'
+        Height: =367
+        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        Items: =Filter(Tools, called = "True")
+        PaddingBottom: =5
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =5
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        SelectionFill: =RGBA(0, 120, 212, 1)
+        Size: =13
+        Width: =1064
+        X: =837
+        Y: =541
+        ZIndex: =70
 
