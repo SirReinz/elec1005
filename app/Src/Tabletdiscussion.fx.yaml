@@ -604,7 +604,7 @@ Tabletdiscussion As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: =Navigate(Tabletselection)
+            OnSelect: =Navigate(Tablettoolbox)
             PaddingBottom: =7
             PaddingLeft: =32
             PaddingRight: =32
@@ -724,14 +724,14 @@ Tabletdiscussion As screen:
             Y: =321
             ZIndex: =44
 
-    logout_Group As group:
+    logout_Group_15 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =47
+        ZIndex: =50
 
-        "'Ellipse 1_3' As image":
+        "'Ellipse 1_13' As image":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -747,9 +747,9 @@ Tabletdiscussion As screen:
             Width: =177
             X: =1711
             Y: =7
-            ZIndex: =37
+            ZIndex: =45
 
-        "'Hello,_2' As label":
+        "'Hello,_12' As label":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             Color: =RGBA(0, 0, 0, 1)
@@ -768,9 +768,9 @@ Tabletdiscussion As screen:
             Width: =207
             X: =1468
             Y: =34
-            ZIndex: =38
+            ZIndex: =46
 
-        msft_Label_3 As label:
+        msft_Label_13 As label:
             Align: =Align.Right
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
@@ -790,9 +790,9 @@ Tabletdiscussion As screen:
             Width: =392
             X: =1301
             Y: =109
-            ZIndex: =39
+            ZIndex: =47
 
-        Image2_2 As image:
+        Image2_12 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -808,9 +808,9 @@ Tabletdiscussion As screen:
             Width: =139
             X: =1730
             Y: =118
-            ZIndex: =41
+            ZIndex: =48
 
-        Button3 As button:
+        Button3_10 As button:
             BorderColor: =RGBA(0, 0, 0, 0)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -823,6 +823,7 @@ Tabletdiscussion As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =Navigate(Tabletlogin) + Reset(password_new)
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =RGBA(0, 0, 0, 0)
@@ -835,5 +836,5 @@ Tabletdiscussion As screen:
             Width: =177
             X: =1711
             Y: =166
-            ZIndex: =46
+            ZIndex: =49
 

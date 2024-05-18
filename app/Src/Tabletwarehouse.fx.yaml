@@ -1002,14 +1002,14 @@ Tabletwarehouse As screen:
             Y: =661
             ZIndex: =69
 
-    logout_Group_1 As group:
+    logout_Group_14 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =76
 
-        "'Ellipse 1_5' As image":
+        "'Ellipse 1_12' As image":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -1027,7 +1027,7 @@ Tabletwarehouse As screen:
             Y: =7
             ZIndex: =71
 
-        "'Hello,_3' As label":
+        "'Hello,_11' As label":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             Color: =RGBA(0, 0, 0, 1)
@@ -1048,7 +1048,7 @@ Tabletwarehouse As screen:
             Y: =34
             ZIndex: =72
 
-        msft_Label_4 As label:
+        msft_Label_12 As label:
             Align: =Align.Right
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
@@ -1070,7 +1070,7 @@ Tabletwarehouse As screen:
             Y: =109
             ZIndex: =73
 
-        Image2_4 As image:
+        Image2_11 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -1088,7 +1088,7 @@ Tabletwarehouse As screen:
             Y: =118
             ZIndex: =74
 
-        Button3_1 As button:
+        Button3_9 As button:
             BorderColor: =RGBA(0, 0, 0, 0)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1101,6 +1101,7 @@ Tabletwarehouse As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =Navigate(Tabletlogin) + Reset(password_new)
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =RGBA(0, 0, 0, 0)

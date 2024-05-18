@@ -179,7 +179,7 @@ Tabletlogin As screen:
                 Set(
                     isVisible,
                     true
-                ) + Reset(password_input)
+                ) + Reset(password_input) + Notify("Password or username is incorrect.", NotificationType.Error)
             )
         PaddingBottom: =7
         PaddingLeft: =32

@@ -16,7 +16,7 @@ Tablettoolbox As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =1920
-        Y: =261.5
+        Y: =210
         ZIndex: =3
 
     "'Toolbox 1' As image":
@@ -33,7 +33,7 @@ Tablettoolbox As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =398
         X: =114
-        Y: =115.5
+        Y: =65
         ZIndex: =4
 
     Icons As groupContainer.manualLayoutContainer:
@@ -435,6 +435,7 @@ Tablettoolbox As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =Navigate(Tabletlogin) + Reset(password_new)
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =RGBA(0, 0, 0, 0)

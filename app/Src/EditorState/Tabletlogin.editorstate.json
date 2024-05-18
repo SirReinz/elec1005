@@ -2083,7 +2083,14 @@
         "PressedBorderColor",
         "PressedColor",
         "PressedFill",
-        "OnSelect",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "If(\n    !IsBlank(\n        LookUp(\n            user_info,\n            user_name = username_input.Text && password = password_input.Text\n        )\n    ),\n    Navigate(Tablettoolbox) + Reset(password_input) + Set(\n        username,\n        username_input.Text\n    ),\n    Set(\n        isVisible,\n        true\n    ) + Reset(password_input)\n)",
+          "InvariantPropertyName": "OnSelect",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "AutoDisableOnSelect",
         "Tooltip",
         "ContentLanguage",

@@ -45,7 +45,7 @@ Tableterrorlist As screen:
         LayoutMode: ="manual"
         Width: =1920
         Y: =7
-        ZIndex: =4
+        ZIndex: =3
 
         Label5 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -539,8 +539,8 @@ Tableterrorlist As screen:
             Size: =70
             Text: =First(ListBox1.SelectedItems).Name
             Width: =604
-            X: =20
-            Y: =27
+            X: =40
+            Y: =17
             ZIndex: =31
 
         logout_Group_2 As group:
@@ -641,6 +641,7 @@ Tableterrorlist As screen:
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =RGBA(0, 0, 0, 0)
+                OnSelect: =Navigate(Tabletlogin) + Reset(password_new)
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -669,7 +670,7 @@ Tableterrorlist As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =1920
         Y: =210
-        ZIndex: =5
+        ZIndex: =4
 
     Image3 As image:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -687,7 +688,7 @@ Tableterrorlist As screen:
         Width: =52
         X: =1370
         Y: =602
-        ZIndex: =10
+        ZIndex: =5
 
     Icon3 As icon.FilterFlat:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -707,7 +708,7 @@ Tableterrorlist As screen:
         Width: =41
         X: =48
         Y: =302
-        ZIndex: =11
+        ZIndex: =6
 
     Button1 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -735,7 +736,7 @@ Tableterrorlist As screen:
         Width: =320
         X: =113
         Y: =615
-        ZIndex: =12
+        ZIndex: =7
 
     Image6 As image:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -753,7 +754,7 @@ Tableterrorlist As screen:
         Width: =38
         X: =1216
         Y: =388
-        ZIndex: =13
+        ZIndex: =8
 
     Icon6 As icon.BackArrow:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -771,7 +772,7 @@ Tableterrorlist As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         X: =400
         Y: =746
-        ZIndex: =14
+        ZIndex: =9
 
     "'Group 3 1_8' As image":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -788,7 +789,22 @@ Tableterrorlist As screen:
         Width: =432.5843200683594
         X: =793
         Y: =20
-        ZIndex: =15
+        ZIndex: =10
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =4
+        Height: =86
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        Width: =324
+        X: =48
+        Y: =124
+        ZIndex: =11
 
     goBack_Group_2 As group:
         Height: =5
@@ -796,6 +812,29 @@ Tableterrorlist As screen:
         X: =40
         Y: =40
         ZIndex: =18
+
+        "'Go Back ➤_2' As label":
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(66, 66, 66, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            FontWeight: =FontWeight.Semibold
+            Height: =46
+            LineHeight: =0.53333336
+            OnSelect: =Navigate(Tablettoolbox)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =33.75
+            Text: ="Go Back ➤"
+            Width: =281
+            X: =78
+            Y: =146
+            ZIndex: =12
 
         goBack_group_2 As button:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -805,7 +844,7 @@ Tableterrorlist As screen:
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 0, 0, 0)
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
@@ -828,30 +867,8 @@ Tableterrorlist As screen:
             Size: =24
             Text: =
             VerticalAlign: =VerticalAlign.Top
-            Width: =258
-            X: =41
-            Y: =147
-            ZIndex: =16
-
-        "'Go Back ➤_2' As label":
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(66, 66, 66, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Semibold
-            Height: =46
-            LineHeight: =0.53333336
-            OnSelect: =Navigate(Tablettoolbox)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =33.75
-            Text: ="Go Back ➤"
-            Width: =244
-            X: =55
-            Y: =147
-            ZIndex: =17
+            Width: =281
+            X: =48
+            Y: =146
+            ZIndex: =13
 

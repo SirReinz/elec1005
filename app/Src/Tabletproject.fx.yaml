@@ -100,8 +100,8 @@ Tabletproject As screen:
         Fill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
         Height: =604
-        HoverFill: =RGBA(0, 120, 212, 1)
-        PressedFill: =RGBA(0, 120, 212, 1)
+        HoverFill: =RGBA(244, 244, 244, 1)
+        PressedFill: =RGBA(244, 244, 244, 1)
         Width: =902
         X: =1018
         Y: =307
@@ -484,14 +484,32 @@ Tabletproject As screen:
         Y: =20
         ZIndex: =90
 
-    logout_Group_7 As group:
+    Label9 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =107
+        Size: =70
+        Text: =First(ListBox1.SelectedItems).Name
+        Width: =604
+        X: =60
+        Y: =32
+        ZIndex: =91
+
+    logout_Group_13 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =90
+        ZIndex: =97
 
-        "'Ellipse 1_7' As image":
+        "'Ellipse 1_11' As image":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -507,9 +525,9 @@ Tabletproject As screen:
             Width: =177
             X: =1711
             Y: =7
-            ZIndex: =85
+            ZIndex: =92
 
-        "'Hello,_5' As label":
+        "'Hello,_10' As label":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             Color: =RGBA(0, 0, 0, 1)
@@ -528,9 +546,9 @@ Tabletproject As screen:
             Width: =207
             X: =1468
             Y: =34
-            ZIndex: =86
+            ZIndex: =93
 
-        msft_Label_6 As label:
+        msft_Label_11 As label:
             Align: =Align.Right
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
@@ -550,9 +568,9 @@ Tabletproject As screen:
             Width: =392
             X: =1301
             Y: =109
-            ZIndex: =87
+            ZIndex: =94
 
-        Image2_6 As image:
+        Image2_10 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -568,9 +586,9 @@ Tabletproject As screen:
             Width: =139
             X: =1730
             Y: =118
-            ZIndex: =88
+            ZIndex: =95
 
-        Button3_3 As button:
+        Button3_8 As button:
             BorderColor: =RGBA(0, 0, 0, 0)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -583,6 +601,7 @@ Tabletproject As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =Navigate(Tabletlogin) + Reset(password_new)
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =RGBA(0, 0, 0, 0)
@@ -595,23 +614,5 @@ Tabletproject As screen:
             Width: =177
             X: =1711
             Y: =166
-            ZIndex: =89
-
-    Label9 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =107
-        Size: =70
-        Text: =First(ListBox1.SelectedItems).Name
-        Width: =604
-        X: =60
-        Y: =32
-        ZIndex: =91
+            ZIndex: =96
 
