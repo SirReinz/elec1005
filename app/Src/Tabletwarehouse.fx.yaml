@@ -453,7 +453,7 @@ Tabletwarehouse As screen:
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =35.5
         X: =100.5
-        Y: =380.3
+        Y: =381
         ZIndex: =39
 
     Rectangle1_1 As rectangle:
@@ -633,7 +633,7 @@ Tabletwarehouse As screen:
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =35.5
         X: =257
-        Y: =380
+        Y: =381
         ZIndex: =52
 
     Rectangle1_13 As rectangle:
@@ -648,7 +648,7 @@ Tabletwarehouse As screen:
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =35.5
         X: =257
-        Y: =412
+        Y: =413
         ZIndex: =53
 
     Rectangle1_14 As rectangle:
@@ -663,7 +663,7 @@ Tabletwarehouse As screen:
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =35.5
         X: =257
-        Y: =444
+        Y: =445
         ZIndex: =54
 
     Rectangle1_15 As rectangle:
@@ -678,7 +678,7 @@ Tabletwarehouse As screen:
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =35.5
         X: =257
-        Y: =511
+        Y: =512
         ZIndex: =55
 
     Rectangle1_16 As rectangle:
@@ -693,7 +693,7 @@ Tabletwarehouse As screen:
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =35.5
         X: =257
-        Y: =477
+        Y: =478
         ZIndex: =56
 
     Rectangle1_17 As rectangle:
@@ -708,6 +708,186 @@ Tabletwarehouse As screen:
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =35.5
         X: =257
-        Y: =544
+        Y: =545
         ZIndex: =57
+
+    Rectangle1_18 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 120, 212, 1)
+        FocusedBorderThickness: =4
+        Height: =31
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =35.5
+        X: =100.5
+        Y: =628
+        ZIndex: =58
+
+    Rectangle1_19 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 120, 212, 1)
+        FocusedBorderThickness: =4
+        Height: =31
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =35.5
+        X: =100.5
+        Y: =661
+        ZIndex: =59
+
+    Rectangle1_20 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 120, 212, 1)
+        FocusedBorderThickness: =4
+        Height: =31
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =35.5
+        X: =100.5
+        Y: =694
+        ZIndex: =60
+
+    Rectangle1_21 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 120, 212, 1)
+        FocusedBorderThickness: =4
+        Height: =31
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =35.5
+        X: =100.5
+        Y: =727
+        ZIndex: =61
+
+    Rectangle1_22 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 120, 212, 1)
+        FocusedBorderThickness: =4
+        Height: =31
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =35.5
+        X: =185
+        Y: =628
+        ZIndex: =62
+
+    Rectangle1_23 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 120, 212, 1)
+        FocusedBorderThickness: =4
+        Height: =31
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =35.5
+        X: =185
+        Y: =661
+        ZIndex: =63
+
+    Rectangle1_24 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 120, 212, 1)
+        FocusedBorderThickness: =4
+        Height: =31
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =35.5
+        X: =185
+        Y: =694
+        ZIndex: =64
+
+    Rectangle1_25 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 120, 212, 1)
+        FocusedBorderThickness: =4
+        Height: =31
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =35.5
+        X: =185
+        Y: =727
+        ZIndex: =65
+
+    Rectangle1_26 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 120, 212, 1)
+        FocusedBorderThickness: =4
+        Height: =31
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =35.5
+        X: =268
+        Y: =628
+        ZIndex: =66
+
+    Rectangle1_27 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 120, 212, 1)
+        FocusedBorderThickness: =4
+        Height: =31
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =35.5
+        X: =268
+        Y: =661
+        ZIndex: =67
+
+    Rectangle1_28 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 120, 212, 1)
+        FocusedBorderThickness: =4
+        Height: =31
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =35.5
+        X: =343
+        Y: =628
+        ZIndex: =68
+
+    Rectangle1_29 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 120, 212, 1)
+        FocusedBorderThickness: =4
+        Height: =31
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =35.5
+        X: =343
+        Y: =661
+        ZIndex: =69
 
