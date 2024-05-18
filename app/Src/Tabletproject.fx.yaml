@@ -1,7 +1,30 @@
 Tabletproject As screen:
+    Fill: =Navigate(Tablettoolbox)
     Height: =911
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
     Width: =1920
+
+    "'Go Back ➤_4' As label":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(66, 66, 66, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        FontWeight: =FontWeight.Semibold
+        Height: =46
+        LineHeight: =0.53333336
+        OnSelect: =Navigate(Tabletselection)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =33.75
+        Text: =
+        Width: =244
+        X: =88
+        Y: =155
+        ZIndex: =34
 
     "'Current project 1_3' As image":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -16,73 +39,9 @@ Tabletproject As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =648
-        X: =82
-        Y: =44
+        X: =67
+        Y: =71
         ZIndex: =36
-
-    goBack_Group_4 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =36
-
-        "'Go Back ➤_4' As label":
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(66, 66, 66, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Semibold
-            Height: =46
-            LineHeight: =0.53333336
-            OnSelect: =Navigate(Tabletselection)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =33.75
-            Text: ="Go Back ➤"
-            Width: =244
-            X: =88
-            Y: =155
-            ZIndex: =34
-
-        goBack_group_4 As button:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =0
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(0, 0, 0, 0)
-            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =46
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: =Navigate(Tabletselection)
-            PaddingBottom: =7
-            PaddingLeft: =32
-            PaddingRight: =32
-            PaddingTop: =6
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Size: =24
-            Text: =
-            VerticalAlign: =VerticalAlign.Top
-            Width: =258
-            X: =74
-            Y: =155
-            ZIndex: =35
 
     msft_Button_17 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -98,6 +57,7 @@ Tabletproject As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: =Navigate(Tabletselection)
         PaddingBottom: =7
         PaddingLeft: =32
         PaddingRight: =32
@@ -295,7 +255,7 @@ Tabletproject As screen:
         ValueHoverFill: =RGBA(0, 120, 212, 1)
         Width: =696
         X: =115
-        Y: =351
+        Y: =340
         ZIndex: =71
 
     msft_Button_13 As button:
@@ -312,6 +272,7 @@ Tabletproject As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: =Navigate(Tabletdiscussion)
         PaddingBottom: =12
         PaddingLeft: =56
         PaddingRight: =56
@@ -378,6 +339,7 @@ Tabletproject As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: =Navigate(Tabletwarehouse)
         PaddingBottom: =12
         PaddingLeft: =56
         PaddingRight: =56
@@ -411,6 +373,7 @@ Tabletproject As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: =Navigate(Tabletdiscussion)
         PaddingBottom: =12
         PaddingLeft: =24
         PaddingRight: =56
@@ -534,4 +497,68 @@ Tabletproject As screen:
             X: =1730
             Y: =118
             ZIndex: =81
+
+    goBack_Group_4 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =85
+
+        "'Go Back ➤_3' As label":
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(66, 66, 66, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            FontWeight: =FontWeight.Semibold
+            Height: =46
+            LineHeight: =0.53333336
+            OnSelect: =Navigate(Tabletselection)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =33.75
+            Text: ="Go Back ➤"
+            Width: =244
+            X: =81
+            Y: =147
+            ZIndex: =83
+
+        goBack_group_3 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =46
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =Navigate(Tablettoolbox)
+            PaddingBottom: =7
+            PaddingLeft: =32
+            PaddingRight: =32
+            PaddingTop: =6
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =24
+            Text: =
+            VerticalAlign: =VerticalAlign.Top
+            Width: =258
+            X: =67
+            Y: =147
+            ZIndex: =84
 
