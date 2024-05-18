@@ -206,7 +206,7 @@ Tabletproject As screen:
         VerticalAlign: =VerticalAlign.Top
         Width: =482
         X: =403
-        Y: =626
+        Y: =651
         ZIndex: =67
 
     "'Next Task:' As label":
@@ -279,12 +279,7 @@ Tabletproject As screen:
     msft_Slider As slider:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
-        Default: |-
-            =msft_Slider: Employees
-            Layout: Vertical
-            ItemHeight: 100
-            recordCount: 0
-            OnChange: Set(sliderValue, msft_Slider_1.Value); Notify("Slider value: " & msft_Slider_1.Value)
+        Default: =RoundDown(Rand() * 100, 0)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
         HandleActiveFill: =RGBA(255, 255, 255, 1)
@@ -300,7 +295,7 @@ Tabletproject As screen:
         ValueHoverFill: =RGBA(0, 120, 212, 1)
         Width: =696
         X: =115
-        Y: =348
+        Y: =351
         ZIndex: =71
 
     msft_Button_13 As button:
@@ -435,6 +430,25 @@ Tabletproject As screen:
         Y: =688
         ZIndex: =77
 
+    Label2 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =167
+        Size: =33
+        Text: |
+            ="Completed: " & Text(msft_Slider.Value) & "%"
+        Width: =470
+        X: =403
+        Y: =440
+        ZIndex: =82
+
     logout_Group_8 As group:
         Height: =5
         Width: =5
@@ -520,23 +534,6 @@ Tabletproject As screen:
             X: =1730
             Y: =118
             ZIndex: =81
-
-    Label2 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Height: =167
-        Size: =33
-        Text: ="dsfaad"
-        Width: =470
-        X: =429
-        Y: =445
-        ZIndex: =82
 
     "'Group 3 1_1' As image":
         BorderColor: =RGBA(0, 0, 0, 0)

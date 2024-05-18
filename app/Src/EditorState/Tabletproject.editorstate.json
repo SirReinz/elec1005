@@ -66,7 +66,7 @@
       "MetaDataIDKey": "",
       "Name": "Auto Detected Progress",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -395,7 +395,7 @@
       "MetaDataIDKey": "",
       "Name": "Current project 1_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -687,7 +687,7 @@
       "MetaDataIDKey": "",
       "Name": "Ellipse 1_9",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 18,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -985,7 +985,7 @@
       "MetaDataIDKey": "",
       "Name": "Estimated Delay: 3 days",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1313,7 +1313,7 @@
       "MetaDataIDKey": "",
       "Name": "Fix errors before proceeding",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1655,7 +1655,7 @@
       "MetaDataIDKey": "",
       "Name": "Go Back ➤_4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2030,7 +2030,7 @@
       "MetaDataIDKey": "",
       "Name": "goBack_group_4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2302,7 +2302,7 @@
       "MetaDataIDKey": "",
       "Name": "goBack_Group_4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 22,
+      "ParentIndex": 23,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2394,7 +2394,7 @@
       "MetaDataIDKey": "",
       "Name": "Group 3 1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2706,7 +2706,7 @@
       "MetaDataIDKey": "",
       "Name": "Hello,_8",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 19,
+      "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3019,7 +3019,7 @@
       "MetaDataIDKey": "",
       "Name": "Image2_8",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 21,
+      "ParentIndex": 22,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3200,7 +3200,14 @@
         "PressedFill",
         "HoverFill",
         "Font",
-        "FontWeight",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "FontWeight",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Align",
         "VerticalAlign",
         "X",
@@ -3239,7 +3246,7 @@
       "MetaDataIDKey": "",
       "Name": "Label2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3508,7 +3515,7 @@
       "MetaDataIDKey": "",
       "Name": "Line 3 (1) 1_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3760,7 +3767,7 @@
       "MetaDataIDKey": "",
       "Name": "logout_Group_8",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 23,
+      "ParentIndex": 24,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3856,7 +3863,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_13",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 12,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4172,7 +4179,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_14",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 13,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4488,7 +4495,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_15",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 14,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4804,7 +4811,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_16",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 15,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5120,7 +5127,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_17",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 17,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5466,7 +5473,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Label_9",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 20,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5790,7 +5797,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Slider",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 16,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6063,7 +6070,7 @@
       "MetaDataIDKey": "",
       "Name": "Next Task:",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6658,7 +6665,7 @@
       "MetaDataIDKey": "",
       "Name": "Rectangle 35",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6930,7 +6937,7 @@
       "MetaDataIDKey": "",
       "Name": "What would you like to do?",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
