@@ -53,6 +53,24 @@ Tableterrorlist As screen:
         Y: =7
         ZIndex: =37
 
+        Label5 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(219, 219, 219, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(237, 237, 237, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =685
+            Size: =13
+            Text: ="文本"
+            Width: =529
+            X: =2
+            Y: =218
+            ZIndex: =1
+
         "'Group 3 2_3' As image":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
@@ -68,7 +86,7 @@ Tableterrorlist As screen:
             Width: =137
             X: =8.5
             Y: =833.5
-            ZIndex: =6
+            ZIndex: =2
 
         "'2024 technology_2' As label":
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -92,7 +110,7 @@ Tableterrorlist As screen:
             Width: =209
             X: =159.5
             Y: =833.5
-            ZIndex: =7
+            ZIndex: =3
 
         Label3 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -108,9 +126,9 @@ Tableterrorlist As screen:
             Size: =90
             Text: ="ERROR"
             Width: =536
-            X: =60
-            Y: =52
-            ZIndex: =8
+            X: =32
+            Y: =14
+            ZIndex: =4
 
         Icon2 As icon.Information:
             BorderColor: =RGBA(166, 166, 166, 1)
@@ -119,6 +137,7 @@ Tableterrorlist As screen:
             DisabledColor: =RGBA(220, 220, 220, 1)
             DisabledFill: =RGBA(0, 0, 0, 0)
             FocusedBorderThickness: =4
+            Height: =32
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             HoverFill: =RGBA(0, 0, 0, 0)
@@ -126,9 +145,10 @@ Tableterrorlist As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
-            X: =458
-            Y: =285
-            ZIndex: =10
+            Width: =48
+            X: =849
+            Y: =273
+            ZIndex: =5
 
         "'123424' As dropdown":
             BorderColor: =RGBA(166, 166, 166, 1)
@@ -165,7 +185,7 @@ Tableterrorlist As screen:
             Size: =18
             X: =99
             Y: =297
-            ZIndex: =11
+            ZIndex: =6
 
         Label4 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -183,7 +203,7 @@ Tableterrorlist As screen:
             Width: =220
             X: =148
             Y: =230
-            ZIndex: =12
+            ZIndex: =7
 
         Image13 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -199,9 +219,9 @@ Tableterrorlist As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =266
-            X: =583
+            X: =568
             Y: =273
-            ZIndex: =13
+            ZIndex: =8
 
         Label6 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -213,36 +233,18 @@ Tableterrorlist As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =162
-            Size: =13
+            Size: =16
             Text: |-
-                ="01 Material Management Errors
+                ="Error ID: 01 Material Management Errors
                 Description：
                 Lack of processing materials, need to be supplemented
                 Date：18/05    Status：Resolved
                 
                 "
             Width: =497
-            X: =882
-            Y: =273
-            ZIndex: =14
-
-        Image14 As image:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =174
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Image: =R
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Width: =266
-            X: =718
-            Y: =472
-            ZIndex: =15
+            X: =897
+            Y: =297
+            ZIndex: =9
 
         Label6_1 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -254,16 +256,16 @@ Tableterrorlist As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =162
-            Size: =13
+            Size: =16
             Text: |-
-                ="02 Production Issues
+                ="Error ID: 02 Production Issues
                 Description：
                 The production machine is not functioning properly and needs to be repaired
                 Date：19/05    Status：Unresolved"
             Width: =497
-            X: =1017
-            Y: =472
-            ZIndex: =16
+            X: =1032
+            Y: =484
+            ZIndex: =10
 
         Image15 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -272,16 +274,16 @@ Tableterrorlist As screen:
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledFill: =RGBA(0, 0, 0, 0)
             FocusedBorderThickness: =4
-            Height: =187
+            Height: =177
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: ='R (1)'
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
-            Width: =347
-            X: =838
+            Width: =365
+            X: =820
             Y: =684
-            ZIndex: =17
+            ZIndex: =11
 
         Label6_2 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -293,16 +295,247 @@ Tableterrorlist As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =162
-            Size: =13
+            Size: =16
             Text: |-
-                ="03 Quality Control Issues
+                ="Error ID: 03 Quality Control Issues
                 Description：
                 The produced items failed the quality inspection.
                 Date：20/05    Status：Unresolved"
             Width: =497
+            X: =1170
+            Y: =684
+            ZIndex: =12
+
+        Icon2_1 As icon.Information:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(0, 120, 212, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =32
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Information
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =48
+            X: =1137
+            Y: =684
+            ZIndex: =13
+
+        Icon2_2 As icon.Information:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(0, 120, 212, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =32
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Information
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =48
+            X: =984
+            Y: =474
+            ZIndex: =14
+
+        "'Go Back ➤_5' As label":
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(66, 66, 66, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            FontWeight: =FontWeight.Semibold
+            Height: =46
+            LineHeight: =0.53333336
+            OnSelect: =Navigate(Tabletselection)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =33.75
+            Text: ="Go Back ➤"
+            Width: =244
+            X: =62
+            Y: =154
+            ZIndex: =15
+
+        Image3_1 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =39
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: ='1'
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =52
+            X: =1514
+            Y: =794
+            ZIndex: =16
+
+        Image8 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =49
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =R
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =108
             X: =1185
-            Y: =696
+            Y: =394
+            ZIndex: =17
+
+        Image11 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =176
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: ='531'
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =278
+            X: =698
+            Y: =471
             ZIndex: =18
+
+        DatePicker1 As datepicker:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            CalendarHeaderFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Font: =Font.'Segoe UI'
+            HoverDateFill: =RGBA(200, 200, 200, 1)
+            IconBackground: =RGBA(0, 120, 212, 1)
+            PaddingTop: =5
+            SelectedDateFill: =RGBA(0, 120, 212, 1)
+            Size: =13
+            X: =110
+            Y: =459
+            ZIndex: =19
+
+        Label4_1 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =55
+            Size: =28
+            Text: ="Date"
+            Width: =220
+            X: =159
+            Y: =391
+            ZIndex: =20
+
+        Icon1 As icon.Sync:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(0, 120, 212, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =56
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Sync
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =44
+            X: =42
+            Y: =604
+            ZIndex: =21
+
+        Icon4 As icon.CalendarBlank:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(0, 120, 212, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =81
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.CalendarBlank
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =44
+            X: =42
+            Y: =438
+            ZIndex: =22
+
+        Icon5 As icon.People:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(0, 120, 212, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =48
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.People
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =54
+            X: =1270
+            Y: =391
+            ZIndex: =23
+
+        Label1 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =96
+            Size: =19
+            Text: |-
+                ="Steve
+                Mary"
+            Width: =169
+            X: =1324
+            Y: =370
+            ZIndex: =24
 
     "'Line 3 (1) 1_5' As image":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -327,15 +560,15 @@ Tableterrorlist As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledFill: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
-        Height: =187
+        Height: =39
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverFill: =RGBA(0, 0, 0, 0)
         Image: ='1'
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =195
-        X: =527
-        Y: =14
+        Width: =52
+        X: =1370
+        Y: =602
         ZIndex: =61
 
     logout_Group_7 As group:
@@ -440,7 +673,35 @@ Tableterrorlist As screen:
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =41
-        X: =33
-        Y: =294
+        X: =48
+        Y: =302
         ZIndex: =63
+
+    Button1 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(209, 232, 178, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(102, 182, 227, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =55
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Text: ="Refresh The Page"
+        Width: =320
+        X: =113
+        Y: =615
+        ZIndex: =64
 
