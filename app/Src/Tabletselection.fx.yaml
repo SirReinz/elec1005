@@ -168,7 +168,7 @@ Tabletselection As screen:
                 Set(
                     projectName,
                     First(ListBox1.SelectedItems).'Project Name'
-                ) + Navigate(Tabletproject)
+                ) + Navigate(Tabletproject) + Reset(ListBox1)
             )
         PaddingBottom: =5
         PaddingLeft: =5

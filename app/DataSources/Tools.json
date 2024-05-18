@@ -36,7 +36,10 @@
       "Title": "标题",
       "tool_name": "tool_name",
       "tool2": "location",
-      "types": "types"
+      "tools": "amount",
+      "types": "types",
+      "was_called": "was_called",
+      "was_called#Id": "was_called Id"
     },
     "DatasetName": "https://unisydneyedu.sharepoint.com/sites/Group14Assignment2",
     "EncodeDataset": true,
