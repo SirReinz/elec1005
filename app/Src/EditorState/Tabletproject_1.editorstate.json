@@ -27,7 +27,14 @@
         "X",
         "Y",
         "ZIndex",
-        "Text",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"18% Completed\n50% Expected\"",
+          "InvariantPropertyName": "Text",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Visible",
         "Overflow",
         "FocusedBorderThickness",
@@ -66,7 +73,7 @@
       "MetaDataIDKey": "",
       "Name": "18% Completed 50% Expected_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -394,7 +401,7 @@
       "MetaDataIDKey": "",
       "Name": "2024 technology_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -722,7 +729,7 @@
       "MetaDataIDKey": "",
       "Name": "Auto Detected Progress_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1034,7 +1041,7 @@
       "MetaDataIDKey": "",
       "Name": "Current project page 2_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1276,7 +1283,7 @@
       "MetaDataIDKey": "",
       "Name": "Ellipse 1_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 17,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1574,7 +1581,7 @@
       "MetaDataIDKey": "",
       "Name": "Estimated Delay: 3 days_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 13,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1902,7 +1909,7 @@
       "MetaDataIDKey": "",
       "Name": "Fix errors before proceeding_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 17,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2230,7 +2237,7 @@
       "MetaDataIDKey": "",
       "Name": "Go Back ➤_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2552,7 +2559,7 @@
       "MetaDataIDKey": "",
       "Name": "Group 3 1_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2844,7 +2851,7 @@
       "MetaDataIDKey": "",
       "Name": "Group 3 2_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3156,7 +3163,7 @@
       "MetaDataIDKey": "",
       "Name": "Hello,_4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 18,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3681,7 +3688,7 @@
       "MetaDataIDKey": "",
       "Name": "Line 3 (1) 1_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4380,7 +4387,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_25",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4696,7 +4703,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_27",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 12,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5012,7 +5019,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_28",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 14,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5328,7 +5335,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_29",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 16,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5644,7 +5651,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_30",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 18,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5960,7 +5967,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_31",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 19,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6574,7 +6581,14 @@
         "BorderColor",
         "BorderStyle",
         "BorderThickness",
-        "Default",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "// 获取一个随机排列的数据集合，并将其设置为 Gallery 控件的 Items 属性\nItems = Shuffle(Employees)\n\n// 调整 Gallery 控件的布局和样式\nLayout = Vertical\nItemHeight = 100",
+          "InvariantPropertyName": "Default",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledBorderColor",
         "DisplayMode",
         "Height",
@@ -6623,7 +6637,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Slider_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6896,7 +6910,7 @@
       "MetaDataIDKey": "",
       "Name": "Next Task:_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 15,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7218,7 +7232,7 @@
       "MetaDataIDKey": "",
       "Name": "Rectangle 28_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7491,7 +7505,7 @@
       "MetaDataIDKey": "",
       "Name": "Rectangle 35_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7694,7 +7708,7 @@
       "MetaDataIDKey": "",
       "Name": "Robot Peter_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8091,7 +8105,7 @@
       "MetaDataIDKey": "",
       "Name": "What would you like to do?_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

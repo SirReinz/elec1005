@@ -173,18 +173,16 @@ Tabletproject_1 As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         FontWeight: =FontWeight.Bold
-        Height: =43
+        Height: =118
         LineHeight: =1.182231
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
         Size: =33.75
-        Text: |-
-            ="18% Completed
-            50% Expected"
+        Text: = " Completed" item.text
         VerticalAlign: =VerticalAlign.Top
-        Width: =320
+        Width: =417
         X: =380.5
         Y: =379.5
         ZIndex: =13
@@ -197,7 +195,7 @@ Tabletproject_1 As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         FontWeight: =FontWeight.Bold
-        Height: =53
+        Height: =171
         LineHeight: =1.182231
         PaddingBottom: =0
         PaddingLeft: =0
@@ -207,7 +205,7 @@ Tabletproject_1 As screen:
         Text: |-
             ="Estimated Delay: 3 days"
         VerticalAlign: =VerticalAlign.Top
-        Width: =482
+        Width: =521
         X: =380.5
         Y: =486.5
         ZIndex: =14
@@ -485,12 +483,12 @@ Tabletproject_1 As screen:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         Default: |-
-            =// 获取一个随机排列的数据集合，并将其设置为 Gallery 控件的 Items 属性
-            Items = Shuffle(Employees)
+            =// 设置 Gallery 控件的 Items 属性为数据集合
+            Items = Employees
             
             // 调整 Gallery 控件的布局和样式
             Layout = Vertical
-            ItemHeight = 100
+            ItemHeight = 10
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
         HandleActiveFill: =RGBA(255, 255, 255, 1)
@@ -505,8 +503,8 @@ Tabletproject_1 As screen:
         ValueFill: =RGBA(102, 102, 102, 1)
         ValueHoverFill: =RGBA(0, 120, 212, 1)
         Width: =696
-        X: =76
-        Y: =297
+        X: =61
+        Y: =312
         ZIndex: =27
 
     "'Line 3 (1) 1_3' As image":
