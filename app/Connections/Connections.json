@@ -17,6 +17,9 @@
           "Discussion Test": {
             "tableName": "04182feb-fb33-4906-86d1-8c807a6c874b"
           },
+          "Tools": {
+            "tableName": "ca713043-4be7-4382-bfa1-1ff69a15ae56"
+          },
           "user_info": {
             "tableName": "d89cdf85-405e-4fa6-9bed-cc5353816673"
           }
@@ -27,7 +30,8 @@
       "Discussion Channels",
       "Discussion List",
       "Discussion Test",
-      "user_info"
+      "user_info",
+      "Tools"
     ],
     "dependencies": {},
     "dependents": [],
