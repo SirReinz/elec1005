@@ -166,7 +166,21 @@ Tabletlogin As screen:
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
         OnSelect: |-
             =If(
-            !IsBlank(LookUp(user_info, user_name = username_input.Text && password = password_input.Text)), Navigate(Tablettoolbox) + Reset(password_input) + Set(username, username_input.Text), Set(isVisible, true) + Reset(password_input))
+                !IsBlank(
+                    LookUp(
+                        user_info,
+                        user_name = username_input.Text && password = password_input.Text
+                    )
+                ),
+                Navigate(Tablettoolbox) + Reset(password_input) + Set(
+                    username,
+                    username_input.Text
+                ),
+                Set(
+                    isVisible,
+                    true
+                ) + Reset(password_input)
+            )
         PaddingBottom: =7
         PaddingLeft: =32
         PaddingRight: =32
@@ -182,8 +196,8 @@ Tabletlogin As screen:
         Text: ="Onwards"
         VerticalAlign: =VerticalAlign.Top
         Width: =333
-        X: =889
-        Y: =561
+        X: =874
+        Y: =678
         ZIndex: =10
 
     username_input As text:
