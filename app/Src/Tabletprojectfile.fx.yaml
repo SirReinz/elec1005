@@ -14,7 +14,7 @@ Tabletprojectfile As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =432.5843200683594
-        X: =462
+        X: =498
         Y: =30
         ZIndex: =1
 
@@ -34,7 +34,7 @@ Tabletprojectfile As screen:
         Text: ="Project File"
         Width: =408
         X: =20
-        Y: =35
+        Y: =18
         ZIndex: =6
 
     logout_Group_10 As group:
@@ -79,8 +79,8 @@ Tabletprojectfile As screen:
             Text: ="Hello"
             VerticalAlign: =VerticalAlign.Top
             Width: =207
-            X: =946
-            Y: =34
+            X: =1001
+            Y: =30
             ZIndex: =3
 
         Image2_8 As image:
@@ -201,7 +201,7 @@ Tabletprojectfile As screen:
         Fill: =RGBA(109, 49, 162, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         FontWeight: =FontWeight.Semibold
-        Height: =60
+        Height: =69
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
@@ -219,9 +219,9 @@ Tabletprojectfile As screen:
         RadiusTopRight: =8
         Size: =26
         Text: ="Go back to projects"
-        Width: =444
-        X: =894
-        Y: =444
+        Width: =518
+        X: =829
+        Y: =433
         ZIndex: =9
 
     msft_Button_18 As button:
@@ -234,7 +234,7 @@ Tabletprojectfile As screen:
         Fill: =RGBA(109, 49, 162, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         FontWeight: =FontWeight.Semibold
-        Height: =60
+        Height: =71
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
@@ -251,10 +251,10 @@ Tabletprojectfile As screen:
         RadiusTopLeft: =8
         RadiusTopRight: =8
         Size: =26.25
-        Text: ="Go to back to Ptojects"
+        Text: ="Go back to Tabletselection"
         VerticalAlign: =VerticalAlign.Top
-        Width: =444
-        X: =894
-        Y: =308
+        Width: =518
+        X: =829
+        Y: =288
         ZIndex: =10
 
