@@ -356,7 +356,7 @@ Tabletwarehouse As screen:
         HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
-        Items: =Tools
+        Items: =If(!IsBlank(LookUp(Tools, called = "True")), Tools)
         PaddingBottom: =5
         PaddingLeft: =5
         PaddingRight: =5
@@ -1007,4 +1007,31 @@ Tabletwarehouse As screen:
             X: =344.7
             Y: =661
             ZIndex: =69
+
+    ListBox3 As listbox:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisabledSelectionColor: =RGBA(166, 166, 166, 1)
+        DisabledSelectionFill: =RGBA(220, 220, 220, 1)
+        Font: =Font.'Segoe UI'
+        Height: =439
+        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        Items: =Tools
+        PaddingBottom: =5
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =5
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        SelectionFill: =RGBA(0, 120, 212, 1)
+        Size: =13
+        X: =134
+        Y: =307
+        ZIndex: =71
 
