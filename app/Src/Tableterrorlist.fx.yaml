@@ -137,8 +137,8 @@ Tableterrorlist As screen:
         HoverFill: =RGBA(0, 120, 212, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =902
-        X: =1018
-        Y: =307
+        X: =464
+        Y: =164
         ZIndex: =39
 
     "'Auto Detected Progress_2' As label":
