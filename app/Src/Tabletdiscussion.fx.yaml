@@ -379,23 +379,7 @@ Tabletdiscussion As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
         OnSelect: |-
-            =If(
-                !IsBlank(message_input.Text) && !IsBlank(First(discussion_ListBox.SelectedItems).'Discussion Topic'),
-                Patch(
-                    'Discussion List',
-                    Defaults('Discussion List'),
-                    {
-                        User: username_input.Text,
-                        Message: message_input.Text,
-                        Time_sent: Text(
-                            Now(),
-                            DateTimeFormat.LongDateTime24
-                        ),
-                        Discussion_Topic: First(discussion_ListBox.SelectedItems).'Discussion Topic'
-                    }
-                );
-                Reset(message_input)
-            )
+            =If(!IsBlank(message_input.Text)&&!IsBlank(First(discussion_ListBox.SelectedItems).'Discussion Topic'),Patch('Discussion List',Defaults('Discussion List'),{User:username_input.Text,Message:message_input.Text,Time_sent:Text(Now(),DateTimeFormat.LongDateTime24),Discussion_Topic:First(discussion_ListBox.SelectedItems).'Discussion Topic'});Reset(message_input))
         PaddingBottom: =7
         PaddingLeft: =32
         PaddingRight: =32

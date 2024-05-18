@@ -25,23 +25,21 @@
       "{VersionNumber}": "Version number",
       "Author": "Created By",
       "Author#Claims": "Created By Claims",
+      "checking": "checking",
       "ComplianceAssetId": "Compliance Asset Id",
       "Created": "Created",
       "Editor": "Modified By",
       "Editor#Claims": "Modified By Claims",
       "ID": "ID",
-      "message": "message",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
-      "time": "time",
-      "Title": "Title",
-      "username": "username"
+      "Title": "Title"
     },
     "DatasetName": "https://unisydneyedu.sharepoint.com/sites/Group14Assignment2",
     "EncodeDataset": true,
     "IsSampleData": false,
     "IsWritable": true,
-    "Name": "Discussion Test",
+    "Name": "Tool checking",
     "Type": "ConnectedDataSourceInfo"
   }
 ]

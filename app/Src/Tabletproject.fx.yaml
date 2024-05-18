@@ -26,23 +26,6 @@ Tabletproject As screen:
         Y: =155
         ZIndex: =34
 
-    "'Current project 1_3' As image":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =92
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: =image2733251
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =648
-        X: =88
-        Y: =71
-        ZIndex: =36
-
     msft_Button_17 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -154,7 +137,7 @@ Tabletproject As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         FontWeight: =FontWeight.Bold
-        Height: =53
+        Height: =78
         LineHeight: =1.182231
         PaddingBottom: =0
         PaddingLeft: =0
@@ -164,9 +147,9 @@ Tabletproject As screen:
         Text: |-
             ="Estimated Delay: 3 days"
         VerticalAlign: =VerticalAlign.Top
-        Width: =482
-        X: =403
-        Y: =651
+        Width: =538
+        X: =406
+        Y: =567
         ZIndex: =67
 
     "'Next Task:' As label":
@@ -187,7 +170,7 @@ Tabletproject As screen:
         Text: |-
             ="Next Task:"
         VerticalAlign: =VerticalAlign.Top
-        Width: =201
+        Width: =246
         X: =86.5
         Y: =697.5
         ZIndex: =68
@@ -239,8 +222,11 @@ Tabletproject As screen:
     msft_Slider As slider:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
-        Default: =RoundDown(Rand() * 100, 0)
+        Default: |-
+            =//RoundDown(Rand() * 100, 0)
+            First(ListBox1.SelectedItems).'Project Progress'
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisplayMode: =DisplayMode.View
         FocusedBorderThickness: =4
         HandleActiveFill: =RGBA(255, 255, 255, 1)
         HandleFill: =RGBA(255, 255, 255, 1)
@@ -272,7 +258,7 @@ Tabletproject As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        OnSelect: =Navigate(Tabletdiscussion)
+        OnSelect: =Navigate(Tableterrorlist)
         PaddingBottom: =12
         PaddingLeft: =56
         PaddingRight: =56
@@ -306,6 +292,7 @@ Tabletproject As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: =Navigate(Tabletprojectfile)
         PaddingBottom: =12
         PaddingLeft: =56
         PaddingRight: =56
