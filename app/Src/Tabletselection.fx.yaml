@@ -221,6 +221,13 @@ Tabletselection As screen:
         Y: =121
         ZIndex: =14
 
+    logout_Group_6 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =15
+
     "'Group 3 1_6' As image":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -235,13 +242,6 @@ Tabletselection As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =432.5843200683594
         X: =816
-        ZIndex: =15
-
-    logout_Group_6 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
         ZIndex: =15
 
     "'Ellipse 1_4' As image":
@@ -290,6 +290,13 @@ Tabletselection As screen:
         Y: =33
         ZIndex: =17
 
+    goBack_Group_3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =18
+
     TextInput3 As text:
         BorderColor: =RGBA(255, 255, 255, 1)
         BorderThickness: =2
@@ -315,13 +322,6 @@ Tabletselection As screen:
         Width: =252
         X: =1401
         Y: =124
-        ZIndex: =18
-
-    goBack_Group_3 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
         ZIndex: =18
 
     Image2_3 As image:
