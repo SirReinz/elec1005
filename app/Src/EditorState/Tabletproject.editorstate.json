@@ -5500,7 +5500,14 @@
         "BorderColor",
         "BorderStyle",
         "BorderThickness",
-        "Default",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "msft_Slider: Employees\nLayout: Vertical\nItemHeight: 100\nrecordCount: 0",
+          "InvariantPropertyName": "Default",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledBorderColor",
         "DisplayMode",
         "Height",

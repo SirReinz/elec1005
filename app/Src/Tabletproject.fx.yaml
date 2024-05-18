@@ -308,6 +308,7 @@ Tabletproject As screen:
             Layout: Vertical
             ItemHeight: 100
             recordCount: 0
+            OnChange: Set(sliderValue, msft_Slider.Value)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
         HandleActiveFill: =RGBA(255, 255, 255, 1)
