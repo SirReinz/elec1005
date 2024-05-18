@@ -390,9 +390,7 @@ Tabletdiscussion As screen:
                             Now(),
                             DateTimeFormat.LongTime24
                         ),
-                        Discussion_Topic: First(discussion_ListBox.SelectedItems).'Discussion Topic'
-                    }
-                )
+                        Discussion_Topic: First(discussion_ListBox.SelectedItems).'Discussion Topic'})
             )
         PaddingBottom: =7
         PaddingLeft: =32
@@ -508,28 +506,6 @@ Tabletdiscussion As screen:
         X: =1320
         Y: =867
         ZIndex: =32
-
-    "'+' As label":
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        FontWeight: =FontWeight.Bold
-        Height: =24
-        LineHeight: =1.183
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =15
-        Text: ="+"
-        Width: =17
-        X: =1223
-        Y: =871
-        ZIndex: =33
 
     msft_ListBox_2 As listbox:
         BorderColor: =RGBA(166, 166, 166, 1)
