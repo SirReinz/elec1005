@@ -1,4 +1,4 @@
-Tabletproject_1 As screen:
+Tabletproject As screen:
     Height: =911
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
     Width: =1920
@@ -9,28 +9,6 @@ Tabletproject_1 As screen:
         Width: =1920
         Y: =9
         ZIndex: =1
-
-        "'Robot Peter_1' As label":
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Bold
-            Height: =118
-            LineHeight: =1.182231
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =75
-            Text: ="Robot Peter"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =506
-            X: =75.5
-            Y: =46.5
-            ZIndex: =4
 
         "'Group 3 1_5' As image":
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -89,28 +67,6 @@ Tabletproject_1 As screen:
             X: =159.5
             Y: =833.5
             ZIndex: =7
-
-        "'Go Back ➤_5' As label":
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(66, 66, 66, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Semibold
-            Height: =24
-            LineHeight: =0.53333336
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =33.75
-            Text: ="Go Back ➤"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =234
-            X: =75.5
-            Y: =185.5
-            ZIndex: =9
 
     "'Rectangle 28_1' As image":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -278,39 +234,6 @@ Tabletproject_1 As screen:
         X: =46.5
         Y: =719.5
         ZIndex: =17
-
-    msft_Button_25 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =0
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 120, 212, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =50
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        PaddingBottom: =7
-        PaddingLeft: =32
-        PaddingRight: =32
-        PaddingTop: =6
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Size: =24
-        Text: ="Button"
-        Width: =222
-        X: =76
-        Y: =176
-        ZIndex: =21
 
     msft_Button_31 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -522,7 +445,7 @@ Tabletproject_1 As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =1920
-        Y: =230
+        Y: =210
         ZIndex: =28
 
     logout_Group_4 As group:
@@ -643,4 +566,85 @@ Tabletproject_1 As screen:
             X: =1730
             Y: =118
             ZIndex: =33
+
+    "'Current project 1_2' As image":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =92
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =image2733251
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =648
+        X: =82
+        Y: =44
+        ZIndex: =36
+
+    goBack_Group_3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =36
+
+        "'Go Back ➤_3' As label":
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(66, 66, 66, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            FontWeight: =FontWeight.Semibold
+            Height: =46
+            LineHeight: =0.53333336
+            OnSelect: =Navigate(Tablettoolbox)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =33.75
+            Text: ="Go Back ➤"
+            Width: =244
+            X: =88
+            Y: =155
+            ZIndex: =34
+
+        goBack_group_3 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =46
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =Navigate(Tablettoolbox)
+            PaddingBottom: =7
+            PaddingLeft: =32
+            PaddingRight: =32
+            PaddingTop: =6
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =24
+            Text: =
+            VerticalAlign: =VerticalAlign.Top
+            Width: =258
+            X: =74
+            Y: =155
+            ZIndex: =35
 
