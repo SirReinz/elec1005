@@ -355,14 +355,7 @@
         "X",
         "Y",
         "ZIndex",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Estimated Delay: \" &\nFirst(ListBox1.SelectedItems).delay",
-          "InvariantPropertyName": "Text",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Text",
         "Visible",
         "Overflow",
         "FocusedBorderThickness",
@@ -690,14 +683,7 @@
         "X",
         "Y",
         "ZIndex",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Fix errors before proceeding\"",
-          "InvariantPropertyName": "Text",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Text",
         "Visible",
         "Overflow",
         "FocusedBorderThickness",
@@ -4544,14 +4530,7 @@
         "X",
         "Y",
         "ZIndex",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Next Task:\"",
-          "InvariantPropertyName": "Text",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Text",
         "Visible",
         "Overflow",
         "FocusedBorderThickness",
