@@ -99,7 +99,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 12,
+    "BindingErrorCount": 14,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -118,7 +118,7 @@
     "ManualOfflineProfileId": "",
     "Name": "Assignment 2 group 14",
     "OriginatingVersion": "1.326",
-    "ParserErrorCount": 8,
+    "ParserErrorCount": 12,
     "ShowStatusBar": false
   },
   "PublishInfo": {

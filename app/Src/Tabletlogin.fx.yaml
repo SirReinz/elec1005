@@ -196,8 +196,8 @@ Tabletlogin As screen:
         Text: ="Onwards"
         VerticalAlign: =VerticalAlign.Top
         Width: =333
-        X: =874
-        Y: =678
+        X: =871
+        Y: =586
         ZIndex: =10
 
     username_input As text:
@@ -227,8 +227,8 @@ Tabletlogin As screen:
         RadiusTopRight: =0
         Size: =37.5
         Width: =761
-        X: =840
-        Y: =234
+        X: =838
+        Y: =218
         ZIndex: =11
 
     password_input As text:
