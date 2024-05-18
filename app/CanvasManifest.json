@@ -99,7 +99,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 4,
+    "BindingErrorCount": 5,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -118,7 +118,7 @@
     "ManualOfflineProfileId": "",
     "Name": "Assignment 2 group 14",
     "OriginatingVersion": "1.326",
-    "ParserErrorCount": 6,
+    "ParserErrorCount": 5,
     "ShowStatusBar": false
   },
   "PublishInfo": {
@@ -139,6 +139,7 @@
     "Tabletproject",
     "Tableterrorlist",
     "Tabletwarehouse",
-    "Tabletdiscussion"
+    "Tabletdiscussion",
+    "Screen1"
   ]
 }
