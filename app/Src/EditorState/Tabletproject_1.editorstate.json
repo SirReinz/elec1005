@@ -6570,7 +6570,14 @@
         "BorderColor",
         "BorderStyle",
         "BorderThickness",
-        "Default",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "// 设置 Gallery 控件的 Items 属性为数据集合\nItems = Employees\n\n// 调整 Gallery 控件的布局和样式\nLayout = Vertical\nItemHeight = 100",
+          "InvariantPropertyName": "Default",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledBorderColor",
         "DisplayMode",
         "Height",
