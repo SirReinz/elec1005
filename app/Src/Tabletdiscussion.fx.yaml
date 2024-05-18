@@ -1,7 +1,7 @@
 Tabletdiscussion As screen:
     Height: =928
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
-    OnVisible: =Set(Visible, false)
+    OnVisible: =Set(Visible, false) + Reset(message_input) + Reset(msft_ListBox_2)
     Width: =1920
 
     "'Discussion main page' As groupContainer.manualLayoutContainer":
@@ -50,8 +50,8 @@ Tabletdiscussion As screen:
             Fill: =RGBA(72.25, 72.25, 72.25, 1)
             FocusedBorderThickness: =4
             Height: =678.494873046875
-            HoverFill: =RGBA(0, 120, 212, 1)
-            PressedFill: =RGBA(0, 120, 212, 1)
+            HoverFill: =RGBA(72.25, 72.25, 72.25, 1)
+            PressedFill: =RGBA(72.25, 72.25, 72.25, 1)
             Width: =326.9300842285156
             X: =4.277099609375
             Y: =226.50537109375
@@ -67,19 +67,19 @@ Tabletdiscussion As screen:
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
             Width: =1063.5194091796875
-            X: =331.2071533203125
-            Y: =236.7080078125
+            X: =327
+            Y: =226
             ZIndex: =8
 
         "'Rectangle 10' As rectangle":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
-            DisabledFill: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(238, 238, 238, 1)
             Fill: =RGBA(238, 238, 238, 1)
             FocusedBorderThickness: =4
             Height: =674.4137573242188
-            HoverFill: =RGBA(0, 120, 212, 1)
-            PressedFill: =RGBA(0, 120, 212, 1)
+            HoverFill: =RGBA(238, 238, 238, 1)
+            PressedFill: =RGBA(238, 238, 238, 1)
             Width: =517.3070678710938
             X: =1403.697021484375
             Y: =226.50537109375
@@ -121,7 +121,7 @@ Tabletdiscussion As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =26.25
+            Size: =20
             Text: |-
                 ="Discussion
                 2024"
@@ -138,8 +138,8 @@ Tabletdiscussion As screen:
             Fill: =RGBA(72.25, 72.25, 72.25, 1)
             FocusedBorderThickness: =4
             Height: =78.56257629394531
-            HoverFill: =RGBA(0, 120, 212, 1)
-            PressedFill: =RGBA(0, 120, 212, 1)
+            HoverFill: =RGBA(72.25, 72.25, 72.25, 1)
+            PressedFill: =RGBA(72.25, 72.25, 72.25, 1)
             Width: =1067.5064697265625
             X: =327.22021484375
             Y: =226.50537109375
@@ -152,8 +152,8 @@ Tabletdiscussion As screen:
             Fill: =RGBA(72.25, 72.25, 72.25, 1)
             FocusedBorderThickness: =4
             Height: =78.56257629394531
-            HoverFill: =RGBA(0, 120, 212, 1)
-            PressedFill: =RGBA(0, 120, 212, 1)
+            HoverFill: =RGBA(72.25, 72.25, 72.25, 1)
+            PressedFill: =RGBA(72.25, 72.25, 72.25, 1)
             Width: =523.2874755859375
             X: =1403.697021484375
             Y: =226.50537109375
@@ -319,7 +319,7 @@ Tabletdiscussion As screen:
         HoverFill: =RGBA(212, 212, 212, 1)
         Items: ='Discussion Channels'
         LineHeight: =1.13
-        OnSelect: =Set(Visible, false)
+        OnSelect: =Set(Visible, false) + Reset(message_input)
         PaddingBottom: =6
         PaddingLeft: =6
         PaddingRight: =6
@@ -390,9 +390,7 @@ Tabletdiscussion As screen:
                             Now(),
                             DateTimeFormat.LongTime24
                         ),
-                        Discussion_Topic: First(discussion_ListBox.SelectedItems).'Discussion Topic'
-                    }
-                )
+                        Discussion_Topic: First(discussion_ListBox.SelectedItems).'Discussion Topic'})
             )
         PaddingBottom: =7
         PaddingLeft: =32
@@ -509,28 +507,6 @@ Tabletdiscussion As screen:
         Y: =867
         ZIndex: =32
 
-    "'+' As label":
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        FontWeight: =FontWeight.Bold
-        Height: =24
-        LineHeight: =1.183
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =15
-        Text: ="+"
-        Width: =17
-        X: =1223
-        Y: =871
-        ZIndex: =33
-
     msft_ListBox_2 As listbox:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =0
@@ -556,6 +532,7 @@ Tabletdiscussion As screen:
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
         SelectionFill: =RGBA(0, 120, 212, 1)
+        SelectMultiple: =false
         Size: =12.75
         Width: =472
         X: =1416
@@ -579,36 +556,6 @@ Tabletdiscussion As screen:
         X: =81
         Y: =54
         ZIndex: =36
-
-    username_ListBox As listbox:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        Color: =RGBA(51, 51, 51, 1)
-        Default: ="Value1"
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        DisabledSelectionColor: =RGBA(166, 166, 166, 1)
-        DisabledSelectionFill: =RGBA(220, 220, 220, 1)
-        DisplayMode: =DisplayMode.View
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =529
-        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        HoverColor: =RGBA(51, 51, 51, 1)
-        HoverFill: =RGBA(212, 212, 212, 1)
-        Items: =Filter('Discussion List', Discussion_Topic = discussion_ListBox.Selected.'Discussion Topic')
-        LineHeight: =1.13
-        PaddingBottom: =6
-        PaddingLeft: =6
-        PaddingRight: =6
-        PaddingTop: =6
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =RGBA(0, 120, 212, 1)
-        SelectionFill: =RGBA(0, 120, 212, 1)
-        Size: =12.75
-        X: =331
-        Y: =330
-        ZIndex: =42
 
     logout_Group_2 As group:
         Height: =5
@@ -713,7 +660,7 @@ Tabletdiscussion As screen:
             FontWeight: =FontWeight.Semibold
             Height: =46
             LineHeight: =0.53333336
-            OnSelect: =Navigate(Tablettoolbox)
+            OnSelect: =Navigate(Tabletselection)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -740,7 +687,7 @@ Tabletdiscussion As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: =Navigate(Tablettoolbox)
+            OnSelect: =Navigate(Tabletselection)
             PaddingBottom: =7
             PaddingLeft: =32
             PaddingRight: =32
@@ -759,6 +706,36 @@ Tabletdiscussion As screen:
             X: =67
             Y: =163
             ZIndex: =27
+
+    username_ListBox As listbox:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        Default: ="Value1"
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisabledSelectionColor: =RGBA(166, 166, 166, 1)
+        DisabledSelectionFill: =RGBA(220, 220, 220, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =529
+        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        Items: =Filter('Discussion List', Discussion_Topic = discussion_ListBox.Selected.'Discussion Topic')
+        LineHeight: =1.13
+        PaddingBottom: =6
+        PaddingLeft: =6
+        PaddingRight: =6
+        PaddingTop: =6
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        SelectionFill: =RGBA(0, 120, 212, 1)
+        Size: =12.75
+        X: =331
+        Y: =339
+        ZIndex: =42
 
     message_ListBox As listbox:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -786,8 +763,9 @@ Tabletdiscussion As screen:
         PressedFill: =RGBA(0, 120, 212, 1)
         SelectionFill: =RGBA(0, 120, 212, 1)
         Size: =12.75
+        Width: =988
         X: =405
-        Y: =330
+        Y: =339
         ZIndex: =43
 
     timeSent_ListBox As listbox:
@@ -816,8 +794,9 @@ Tabletdiscussion As screen:
         PressedFill: =RGBA(0, 120, 212, 1)
         SelectionFill: =RGBA(0, 120, 212, 1)
         Size: =12.75
+        Width: =988
         X: =405
-        Y: =312
+        Y: =321
         ZIndex: =44
 
     empty_Label As label:

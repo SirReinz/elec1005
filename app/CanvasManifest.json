@@ -118,7 +118,7 @@
     "ManualOfflineProfileId": "",
     "Name": "Assignment 2 group 14",
     "OriginatingVersion": "1.326",
-    "ParserErrorCount": 5,
+    "ParserErrorCount": 6,
     "ShowStatusBar": false
   },
   "PublishInfo": {
@@ -135,9 +135,9 @@
   "ScreenOrder": [
     "Tabletlogin",
     "Tablettoolbox",
+    "Tabletselection",
     "Tabletproject",
     "Tableterrorlist",
-    "Tabletselection_1",
     "Tabletwarehouse",
     "Tabletdiscussion"
   ]

@@ -37,7 +37,7 @@ Tabletproject As screen:
             FontWeight: =FontWeight.Semibold
             Height: =46
             LineHeight: =0.53333336
-            OnSelect: =Navigate(Tablettoolbox)
+            OnSelect: =Navigate(Tabletselection)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -64,7 +64,7 @@ Tabletproject As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: =Navigate(Tablettoolbox)
+            OnSelect: =Navigate(Tabletselection)
             PaddingBottom: =7
             PaddingLeft: =32
             PaddingRight: =32
@@ -186,30 +186,6 @@ Tabletproject As screen:
         Y: =290.5
         ZIndex: =65
 
-    "'18% Completed 50% Expected' As label":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        FontWeight: =FontWeight.Bold
-        Height: =107
-        LineHeight: =1.182231
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =33.75
-        Text: |-
-            ="18% Completed
-            50% Expected"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =482
-        X: =420.5
-        Y: =410.5
-        ZIndex: =66
-
     "'Estimated Delay: 3 days' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -229,8 +205,8 @@ Tabletproject As screen:
             ="Estimated Delay: 3 days"
         VerticalAlign: =VerticalAlign.Top
         Width: =482
-        X: =420.5
-        Y: =517.5
+        X: =403
+        Y: =626
         ZIndex: =67
 
     "'Next Task:' As label":
@@ -303,7 +279,12 @@ Tabletproject As screen:
     msft_Slider As slider:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
-        Default: =0
+        Default: |-
+            =msft_Slider: Employees
+            Layout: Vertical
+            ItemHeight: 100
+            recordCount: 0
+            OnChange: Set(sliderValue, msft_Slider_1.Value); Notify("Slider value: " & msft_Slider_1.Value)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
         HandleActiveFill: =RGBA(255, 255, 255, 1)
@@ -319,7 +300,7 @@ Tabletproject As screen:
         ValueHoverFill: =RGBA(0, 120, 212, 1)
         Width: =696
         X: =115
-        Y: =343
+        Y: =348
         ZIndex: =71
 
     msft_Button_13 As button:
@@ -518,8 +499,8 @@ Tabletproject As screen:
             Size: =40
             Text: =username_input.Text
             Width: =392
-            X: =1301
-            Y: =109
+            X: =1319
+            Y: =126
             ZIndex: =80
 
         Image2_8 As image:
@@ -539,4 +520,21 @@ Tabletproject As screen:
             X: =1730
             Y: =118
             ZIndex: =81
+
+    Label2 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =167
+        Size: =33
+        Text: ="dsfaad"
+        Width: =470
+        X: =429
+        Y: =445
+        ZIndex: =82
 
