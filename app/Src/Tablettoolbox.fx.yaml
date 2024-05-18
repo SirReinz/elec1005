@@ -293,7 +293,7 @@ Tablettoolbox As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(0, 0, 0, 0)
-        OnSelect: =Navigate(Tabletselection)
+        OnSelect: =Navigate(Tabletselection) + Reset(ListBox1)
         PaddingBottom: =7
         PaddingLeft: =32
         PaddingRight: =32
