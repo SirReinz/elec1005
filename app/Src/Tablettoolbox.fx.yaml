@@ -329,71 +329,28 @@ Tablettoolbox As screen:
         Y: =20
         ZIndex: =15
 
-    logout_Group_9 As group:
+    logout_Group_3 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =20
 
-        "'Ellipse 1_4' As image":
+        Image2_3 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledFill: =RGBA(0, 0, 0, 0)
             FocusedBorderThickness: =4
-            Height: =156
+            Height: =136
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
-            Image: =image27181722
+            Image: =Logout_2
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
-            Width: =177
-            X: =1711
-            Y: =7
-            ZIndex: =16
-
-        "'Hello,_3' As label":
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Height: =84
-            LineHeight: =1.182231
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =60
-            Text: ="Hello"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =207
-            X: =1468
-            Y: =34
-            ZIndex: =17
-
-        msft_Label_4 As label:
-            Align: =Align.Right
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Bold
-            Height: =75
-            LineHeight: =1.183
-            PaddingBottom: =9
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =8
-            Size: =40
-            Text: =username_input.Text
-            Width: =392
-            X: =1301
-            Y: =109
-            ZIndex: =18
+            Width: =139
+            X: =1730
+            Y: =118
+            ZIndex: =19
 
