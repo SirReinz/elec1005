@@ -537,7 +537,7 @@ Tableterrorlist As screen:
             FontWeight: =FontWeight.Semibold
             Height: =107
             Size: =70
-            Text: =First(ListBox1.SelectedItems).Name
+            Text: =First(ListBox1.SelectedItems).名称
             Width: =604
             X: =40
             Y: =17
