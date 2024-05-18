@@ -33,6 +33,7 @@
       "ID": "ID",
       "Modified": "修改时间",
       "OData__ColorTag": "颜色标记",
+      "ProjectName": "Project Name",
       "ProjectProgress": "Project Progress",
       "Title": "标题"
     },
