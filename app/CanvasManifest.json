@@ -134,9 +134,9 @@
   },
   "ScreenOrder": [
     "Tabletlogin",
-    "Tablettoolbox",
+    "Tablettoolbox_1",
     "Tabletproject_1",
-    "Tabletselection",
+    "Tabletselection_1",
     "Tabletwarehouse",
     "Tabletdiscussion"
   ]
