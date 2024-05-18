@@ -3,45 +3,6 @@ Tablettoolbox As screen:
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
     Width: =1920
 
-    "'Ellipse 1_4' As image":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =177
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: =image271413
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =177
-        X: =1743
-        Y: =40
-        ZIndex: =1
-
-    "'Hello,_3' As label":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Height: =95
-        LineHeight: =1.182231
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =60
-        Text: ="Hello,"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =187
-        X: =1528
-        Y: =63.5
-        ZIndex: =2
-
     "'Line 3 1' As image":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -197,23 +158,6 @@ Tablettoolbox As screen:
             X: =1396
             Y: =444
             ZIndex: =12
-
-    "'Group 3 1_4' As image":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =170
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: =image271425
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =434
-        X: =832
-        Y: =55.5
-        ZIndex: =6
 
     "'image 1' As image":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -540,24 +484,4 @@ Tablettoolbox As screen:
         X: =131
         Y: =209.5
         ZIndex: =18
-
-    msft_Label_4 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Height: =95
-        LineHeight: =1.183
-        PaddingBottom: =9
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =8
-        Size: =60
-        Text: ="{user}"
-        Width: =229
-        X: =1513
-        Y: =148.5
-        ZIndex: =19
 
