@@ -1,5 +1,5 @@
 Tabletproject As screen:
-    Fill: =Navigate(Tablettoolbox)
+    Fill: =
     Height: =911
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
     Width: =1920
@@ -39,7 +39,7 @@ Tabletproject As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =648
-        X: =67
+        X: =88
         Y: =71
         ZIndex: =36
 
@@ -475,4 +475,22 @@ Tabletproject As screen:
             X: =67
             Y: =147
             ZIndex: =84
+
+    Label1 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Courier New'
+        FontWeight: =FontWeight.Bold
+        Height: =122
+        Size: =70
+        Text: =
+        Width: =926
+        X: =791
+        Y: =71
+        ZIndex: =86
 
