@@ -16,7 +16,7 @@ Tablet_register As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =838
-        Y: =25
+        Y: =12
         ZIndex: =1
 
     "'Header 1_1' As image":
@@ -187,10 +187,10 @@ Tablet_register As screen:
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Size: =37.5
-        Text: ="Onwards"
+        Text: ="Register"
         VerticalAlign: =VerticalAlign.Top
         Width: =333
-        X: =871
+        X: =858
         Y: =586
         ZIndex: =10
 
@@ -255,4 +255,40 @@ Tablet_register As screen:
         X: =838
         Y: =218
         ZIndex: =12
+
+    msft_Button_28 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 120, 212, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        FontWeight: =FontWeight.Semibold
+        Height: =90
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: =Navigate(Tabletlogin)
+        PaddingBottom: =7
+        PaddingLeft: =32
+        PaddingRight: =32
+        PaddingTop: =6
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =37.5
+        Text: |-
+            ="Go Back
+            "
+        VerticalAlign: =VerticalAlign.Top
+        Width: =333
+        X: =858
+        Y: =704
+        ZIndex: =13
 
