@@ -335,7 +335,7 @@
       "MetaDataIDKey": "",
       "Name": "Image2_4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1368,7 +1368,7 @@
       "MetaDataIDKey": "",
       "Name": "logout_Group_9",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
