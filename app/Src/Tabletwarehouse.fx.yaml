@@ -38,9 +38,9 @@ Tabletwarehouse As screen:
         Size: =90
         Text: ="Warehouse"
         VerticalAlign: =VerticalAlign.Top
-        Width: =606
-        X: =74
-        Y: =62
+        Width: =704
+        X: =26
+        Y: =15
         ZIndex: =3
 
     "'Group 3 1_3' As image":
@@ -78,6 +78,7 @@ Tabletwarehouse As screen:
         ZIndex: =5
 
     "'Input Label' As label":
+        Align: =Align.Justify
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         Color: =RGBA(66, 66, 66, 1)
@@ -85,18 +86,19 @@ Tabletwarehouse As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         FontWeight: =FontWeight.Semibold
-        Height: =24
+        Height: =80
         LineHeight: =0.53333336
+        Overflow: =Overflow.Scroll
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
-        PaddingTop: =0
+        PaddingTop: =20
         Size: =33.75
         Text: ="Search for item"
         VerticalAlign: =VerticalAlign.Top
-        Width: =388
-        X: =834
-        Y: =301
+        Width: =500
+        X: =866
+        Y: =268
         ZIndex: =6
 
     "'Go Back ➤_3' As label":
@@ -107,18 +109,18 @@ Tabletwarehouse As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         FontWeight: =FontWeight.Semibold
-        Height: =24
+        Height: =60
         LineHeight: =0.53333336
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
-        PaddingTop: =0
+        PaddingTop: =20
         Size: =33.75
-        Text: ="Go Back ➤"
+        Text: ="Go Back  ➤"
         VerticalAlign: =VerticalAlign.Top
-        Width: =226
+        Width: =416
         X: =91
-        Y: =201
+        Y: =157
         ZIndex: =7
 
     "'Currently searching: N/A' As label":
@@ -153,7 +155,7 @@ Tabletwarehouse As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         FontWeight: =FontWeight.Semibold
-        Height: =24
+        Height: =58
         LineHeight: =0.53333336
         PaddingBottom: =0
         PaddingLeft: =0
@@ -164,7 +166,7 @@ Tabletwarehouse As screen:
         VerticalAlign: =VerticalAlign.Top
         Width: =155
         X: =1667
-        Y: =296
+        Y: =259
         ZIndex: =9
 
     "'Recent searches' As label":
@@ -175,58 +177,19 @@ Tabletwarehouse As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         FontWeight: =FontWeight.Semibold
-        Height: =24
+        Height: =61
         LineHeight: =0.53333336
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
-        PaddingTop: =0
+        PaddingTop: =10
         Size: =33.75
         Text: ="Recent searches"
         VerticalAlign: =VerticalAlign.Top
         Width: =388
-        X: =834
-        Y: =491
+        X: =835
+        Y: =472
         ZIndex: =10
-
-    "'Click to search!' As label":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(66, 66, 66, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        FontWeight: =FontWeight.Semibold
-        Height: =24
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =15
-        Text: ="Click to search!"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =388
-        X: =1241
-        Y: =491
-        ZIndex: =11
-
-    "'Line 4' As image":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =123.79676055908203
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: =image2718945
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =801.709228515625
-        X: =1069.15087890625
-        Y: =355
-        ZIndex: =12
 
     "'Use case_Dropdown' As dropdown":
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -337,39 +300,6 @@ Tabletwarehouse As screen:
         Y: =348
         ZIndex: =16
 
-    "'Go Back_Button' As button":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =0
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 120, 212, 0)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        FontWeight: =FontWeight.Semibold
-        Height: =39
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        PaddingBottom: =12
-        PaddingLeft: =56
-        PaddingRight: =56
-        PaddingTop: =11
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Size: =26.25
-        Text: =""
-        VerticalAlign: =VerticalAlign.Top
-        Width: =242
-        X: =77
-        Y: =193
-        ZIndex: =17
-
     "'Hello,_2' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -447,6 +377,7 @@ Tabletwarehouse As screen:
             SelectionFill: =RGBA(0, 120, 212, 1)
             Size: =18.75
             Width: =1044
+            X: =16
             ZIndex: =21
 
     logout_Button As button:
@@ -459,7 +390,7 @@ Tabletwarehouse As screen:
         Fill: =RGBA(0, 120, 212, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         FontWeight: =FontWeight.Semibold
-        Height: =59
+        Height: =61
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
@@ -476,20 +407,20 @@ Tabletwarehouse As screen:
         RadiusTopRight: =4
         Size: =15
         Text: =""
-        Width: =155
-        X: =1724
+        Width: =222
+        X: =1692
         Y: =184
         ZIndex: =22
 
     Logout_3 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
-        Color: =RGBA(235.875, 28.501562, 28.501562, 1)
+        Color: =RGBA(204, 216, 225, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         FontWeight: =FontWeight.Bold
-        Height: =59
+        Height: =75
         LineHeight: =1.182231
         PaddingBottom: =0
         PaddingLeft: =0
@@ -498,8 +429,8 @@ Tabletwarehouse As screen:
         Size: =37.5
         Text: ="Logout"
         VerticalAlign: =VerticalAlign.Top
-        Width: =159
-        X: =1724
+        Width: =194
+        X: =1713
         Y: =184
         ZIndex: =23
 
@@ -516,6 +447,22 @@ Tabletwarehouse As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =1920
-        Y: =210
+        Y: =234
         ZIndex: =24
+
+    Label1 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =16
+        Text: ="click to research"
+        Width: =200
+        X: =1420
+        Y: =366
+        ZIndex: =25
 
