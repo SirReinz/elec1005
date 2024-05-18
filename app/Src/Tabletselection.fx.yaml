@@ -146,6 +146,45 @@ Tabletselection As screen:
         Y: =39
         ZIndex: =8
 
+    ListBox1 As listbox:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisabledSelectionColor: =RGBA(166, 166, 166, 1)
+        DisabledSelectionFill: =RGBA(220, 220, 220, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Segoe UI'
+        Height: =555
+        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        Items: ='Project List'
+        LineHeight: =1
+        OnSelect: |-
+            =If(
+                !IsBlank(First(ListBox1.SelectedItems).'Project Name'),
+                Set(
+                    projectName,
+                    First(ListBox1.SelectedItems).'Project Name'
+                ) + Navigate(Tabletproject)
+            )
+        PaddingBottom: =5
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =5
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        SelectionColor: =RGBA(0, 0, 0, 0)
+        SelectionFill: =RGBA(0, 120, 212, 1)
+        Size: =40
+        Width: =1647
+        X: =161
+        Y: =356
+        ZIndex: =13
+
     Go_back As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -182,6 +221,13 @@ Tabletselection As screen:
         Y: =121
         ZIndex: =14
 
+    logout_Group_6 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =15
+
     "'Group 3 1_6' As image":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -196,13 +242,6 @@ Tabletselection As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =432.5843200683594
         X: =816
-        ZIndex: =15
-
-    logout_Group_6 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
         ZIndex: =15
 
     "'Ellipse 1_4' As image":
@@ -251,6 +290,13 @@ Tabletselection As screen:
         Y: =33
         ZIndex: =17
 
+    goBack_Group_3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =18
+
     TextInput3 As text:
         BorderColor: =RGBA(255, 255, 255, 1)
         BorderThickness: =2
@@ -276,13 +322,6 @@ Tabletselection As screen:
         Width: =252
         X: =1401
         Y: =124
-        ZIndex: =18
-
-    goBack_Group_3 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
         ZIndex: =18
 
     Image2_3 As image:

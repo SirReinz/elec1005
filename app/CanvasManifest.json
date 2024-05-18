@@ -118,7 +118,7 @@
     "ManualOfflineProfileId": "",
     "Name": "Assignment 2 group 14",
     "OriginatingVersion": "1.326",
-    "ParserErrorCount": 5,
+    "ParserErrorCount": 0,
     "ShowStatusBar": false
   },
   "PublishInfo": {
@@ -130,7 +130,7 @@
     "PublishDataLocally": false,
     "PublishResourcesLocally": false,
     "PublishTarget": "player",
-    "UserLocale": "zh-CN"
+    "UserLocale": "en-US"
   },
   "ScreenOrder": [
     "Tabletlogin",
@@ -140,6 +140,6 @@
     "Tableterrorlist",
     "Tabletwarehouse",
     "Tabletdiscussion",
-    "Screen1"
+    "Tabletprojectfile"
   ]
 }
