@@ -1,7 +1,18 @@
 Tabletwarehouse As screen:
     Height: =911
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
-    OnVisible: =ClearCollect(RecentSearches, [])
+    OnVisible: |-
+        =//ClearCollect(RecentSearches, []) + 
+        UpdateContext({updateTriggered: false});
+        If(
+            Not(updateTriggered),
+            UpdateIf(
+                Tools,
+                true, // Condition to update all records
+                {called: "false"} // New value for the "Called" column
+            );
+            UpdateContext({updateTriggered: true})
+        )
     Width: =1920
 
     "'Group 3 1_3' As image":
