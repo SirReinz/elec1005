@@ -390,9 +390,7 @@ Tabletdiscussion As screen:
                             Now(),
                             DateTimeFormat.LongTime24
                         ),
-                        Discussion_Topic: First(discussion_ListBox.SelectedItems).'Discussion Topic'
-                    }
-                )
+                        Discussion_Topic: First(discussion_ListBox.SelectedItems).'Discussion Topic'})
             )
         PaddingBottom: =7
         PaddingLeft: =32
@@ -509,28 +507,6 @@ Tabletdiscussion As screen:
         Y: =867
         ZIndex: =32
 
-    "'+' As label":
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        FontWeight: =FontWeight.Bold
-        Height: =24
-        LineHeight: =1.183
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =15
-        Text: ="+"
-        Width: =17
-        X: =1223
-        Y: =871
-        ZIndex: =33
-
     msft_ListBox_2 As listbox:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =0
@@ -580,6 +556,36 @@ Tabletdiscussion As screen:
         X: =81
         Y: =54
         ZIndex: =36
+
+    username_ListBox As listbox:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        Default: ="Value1"
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisabledSelectionColor: =RGBA(166, 166, 166, 1)
+        DisabledSelectionFill: =RGBA(220, 220, 220, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =529
+        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        Items: =Filter('Discussion List', Discussion_Topic = discussion_ListBox.Selected.'Discussion Topic')
+        LineHeight: =1.13
+        PaddingBottom: =6
+        PaddingLeft: =6
+        PaddingRight: =6
+        PaddingTop: =6
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        SelectionFill: =RGBA(0, 120, 212, 1)
+        Size: =12.75
+        X: =331
+        Y: =339
+        ZIndex: =42
 
     logout_Group_2 As group:
         Height: =5
@@ -730,36 +736,6 @@ Tabletdiscussion As screen:
             X: =67
             Y: =163
             ZIndex: =27
-
-    username_ListBox As listbox:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        Color: =RGBA(51, 51, 51, 1)
-        Default: ="Value1"
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        DisabledSelectionColor: =RGBA(166, 166, 166, 1)
-        DisabledSelectionFill: =RGBA(220, 220, 220, 1)
-        DisplayMode: =DisplayMode.View
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =529
-        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        HoverColor: =RGBA(51, 51, 51, 1)
-        HoverFill: =RGBA(212, 212, 212, 1)
-        Items: =Filter('Discussion List', Discussion_Topic = discussion_ListBox.Selected.'Discussion Topic')
-        LineHeight: =1.13
-        PaddingBottom: =6
-        PaddingLeft: =6
-        PaddingRight: =6
-        PaddingTop: =6
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =RGBA(0, 120, 212, 1)
-        SelectionFill: =RGBA(0, 120, 212, 1)
-        Size: =12.75
-        X: =331
-        Y: =339
-        ZIndex: =42
 
     message_ListBox As listbox:
         BorderColor: =RGBA(166, 166, 166, 1)
