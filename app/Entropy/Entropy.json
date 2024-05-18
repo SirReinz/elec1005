@@ -4,7 +4,6 @@
   "ControlUniqueIds": {
     "+": 40,
     "123424": 58,
-    "18% Completed 50% Expected": 82,
     "2024 technology_2": 57,
     "Add button": 24,
     "App": 1,
@@ -70,6 +69,7 @@
     "Input Label": 144,
     "Inquiries_ 1": 74,
     "Label1": 137,
+    "Label2": 154,
     "Label3": 56,
     "Label4": 55,
     "Line 2 (1) 1": 75,
@@ -157,7 +157,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/18/2024 02:54:05",
+  "HeaderLastSavedDateTimeUTC": "05/18/2024 03:05:59",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "82f61f49-d582-40f4-a0e3-c8f96ade6421": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/0064af19052f465ab9dfc568bae548b9\""
@@ -332,7 +332,6 @@
   "OverridablePropertiesEntry": {
     "+": {},
     "123424": {},
-    "18% Completed 50% Expected": {},
     "2024 technology_2": {},
     "Add button": {},
     "App": {},
@@ -398,6 +397,7 @@
     "Input Label": {},
     "Inquiries_ 1": {},
     "Label1": {},
+    "Label2": {},
     "Label3": {},
     "Label4": {},
     "Line 2 (1) 1": {},
@@ -488,7 +488,6 @@
   "PublishOrderIndices": {
     "+": 21,
     "123424": 61,
-    "18% Completed 50% Expected": 81,
     "2024 technology_2": 60,
     "Add button": 40,
     "App": 0,
@@ -554,6 +553,7 @@
     "Input Label": 143,
     "Inquiries_ 1": 73,
     "Label1": 136,
+    "Label2": 0,
     "Label3": 59,
     "Label4": 58,
     "Line 2 (1) 1": 74,
