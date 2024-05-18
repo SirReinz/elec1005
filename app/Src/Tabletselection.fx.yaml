@@ -228,13 +228,6 @@ Tabletselection As screen:
         Y: =40
         ZIndex: =15
 
-    goBack_Group_3 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =18
-
     logout_Group_9 As group:
         Height: =5
         Width: =5
@@ -259,6 +252,13 @@ Tabletselection As screen:
             X: =1730
             Y: =118
             ZIndex: =17
+
+    goBack_Group_3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =18
 
     logout_Group_4 As group:
         Height: =5
