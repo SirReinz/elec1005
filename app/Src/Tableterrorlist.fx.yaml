@@ -14,7 +14,7 @@ Tableterrorlist As screen:
         Height: =170
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverFill: =RGBA(0, 0, 0, 0)
-        Image: ='图片_20240518171531'
+        Image: =图片_20240518171531
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =268

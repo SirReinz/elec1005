@@ -683,7 +683,7 @@
       "MetaDataIDKey": "",
       "Name": "Ellipse 1_9",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -975,7 +975,7 @@
       "MetaDataIDKey": "",
       "Name": "Group 3 1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1287,7 +1287,7 @@
       "MetaDataIDKey": "",
       "Name": "Hello,_8",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1600,7 +1600,7 @@
       "MetaDataIDKey": "",
       "Name": "Image2_8",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1812,7 +1812,7 @@
       "MetaDataIDKey": "",
       "Name": "Line 3 1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2064,7 +2064,7 @@
       "MetaDataIDKey": "",
       "Name": "logout_Group_10",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2167,7 +2167,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_18",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
