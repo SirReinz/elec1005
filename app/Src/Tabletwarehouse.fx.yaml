@@ -141,8 +141,8 @@ Tabletwarehouse As screen:
         RadiusTopRight: =0
         Size: =22.5
         Width: =510
-        X: =835
-        Y: =340
+        X: =866
+        Y: =347
         ZIndex: =10
 
     "'Line 3 (1) 1_1' As image":
@@ -292,11 +292,11 @@ Tabletwarehouse As screen:
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Size: =15
-        Text: ="click to research"
+        Size: =25
+        Text: ="Search"
         Width: =222
-        X: =1366
-        Y: =340
+        X: =1397
+        Y: =352
         ZIndex: =38
 
     ListBox2 As listbox:
@@ -308,7 +308,7 @@ Tabletwarehouse As screen:
         DisabledSelectionColor: =RGBA(166, 166, 166, 1)
         DisabledSelectionFill: =RGBA(220, 220, 220, 1)
         Font: =Font.'Segoe UI'
-        Height: =367
+        Height: =340
         HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
@@ -336,7 +336,7 @@ Tabletwarehouse As screen:
         SelectionFill: =RGBA(0, 120, 212, 1)
         SelectMultiple: =false
         Size: =25
-        Width: =1064
+        Width: =984
         X: =837
         Y: =541
         ZIndex: =70

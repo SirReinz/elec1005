@@ -7529,7 +7529,14 @@
           "NameMapSourceSchema": "?"
         },
         "X",
-        "Y",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ZIndex",
         "RadiusBottomLeft",
         "RadiusBottomRight",
