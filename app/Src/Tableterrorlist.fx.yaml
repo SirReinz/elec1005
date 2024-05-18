@@ -26,7 +26,7 @@ Tableterrorlist As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: =Navigate(Tablettoolbox)
+            OnSelect: =Navigate(Tabletselection)
             PaddingBottom: =7
             PaddingLeft: =32
             PaddingRight: =32
@@ -145,7 +145,16 @@ Tableterrorlist As screen:
             HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(212, 212, 212, 1)
-            Items: =DropDownSample
+            Items: |
+                =[
+                    "Task Allocation Errors",
+                    "Communication Issues",
+                    "Material Management Errors",
+                    "Production Issues",
+                    "Quality Control Issues",
+                    "Data Management Issues",
+                    "System Errors"
+                ]
             PaddingBottom: =5
             PaddingLeft: =12
             PaddingRight: =5
@@ -155,9 +164,27 @@ Tableterrorlist As screen:
             PressedFill: =RGBA(0, 120, 212, 1)
             SelectionFill: =RGBA(0, 120, 212, 1)
             Size: =13
-            X: =88
-            Y: =262
+            X: =99
+            Y: =297
             ZIndex: =11
+
+        Label4 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =55
+            Size: =24
+            Text: ="Errortype"
+            Width: =328
+            X: =99
+            Y: =242
+            ZIndex: =12
 
     "'Rectangle 35_2' As rectangle":
         BorderColor: =RGBA(0, 0, 0, 0)

@@ -5500,14 +5500,7 @@
         "BorderColor",
         "BorderStyle",
         "BorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "0",
-          "InvariantPropertyName": "Default",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Default",
         "DisabledBorderColor",
         "DisplayMode",
         "Height",
