@@ -348,7 +348,7 @@ Tabletwarehouse As screen:
         Y: =40
         ZIndex: =70
 
-        Rectangle1 As rectangle:
+        A As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -369,7 +369,7 @@ Tabletwarehouse As screen:
             Y: =381
             ZIndex: =39
 
-        Rectangle1_1 As rectangle:
+        B As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -378,10 +378,16 @@ Tabletwarehouse As screen:
             FocusedBorderThickness: =4
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
+            OnSelect: |-
+                =If(
+                    cube_location = "B",
+                    true,
+                    false
+                )
             PressedFill: =RGBA(0, 120, 212, 1)
             Visible: |-
                 =If(
-                    cube_location = "location A",
+                    cube_location = "B",
                     true,
                     false
                 )
@@ -390,7 +396,7 @@ Tabletwarehouse As screen:
             Y: =413
             ZIndex: =40
 
-        Rectangle1_3 As rectangle:
+        C As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -399,10 +405,16 @@ Tabletwarehouse As screen:
             FocusedBorderThickness: =4
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
+            OnSelect: |-
+                =If(
+                    cube_location = "B",
+                    true,
+                    false
+                )
             PressedFill: =RGBA(0, 120, 212, 1)
             Visible: |-
                 =If(
-                    cube_location = "location A",
+                    cube_location = "C",
                     true,
                     false
                 )
@@ -411,7 +423,7 @@ Tabletwarehouse As screen:
             Y: =445.3
             ZIndex: =42
 
-        Rectangle1_4 As rectangle:
+        D As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -423,7 +435,7 @@ Tabletwarehouse As screen:
             PressedFill: =RGBA(0, 120, 212, 1)
             Visible: |-
                 =If(
-                    cube_location = "location A",
+                    cube_location = "D",
                     true,
                     false
                 )
@@ -432,7 +444,7 @@ Tabletwarehouse As screen:
             Y: =512
             ZIndex: =43
 
-        Rectangle1_5 As rectangle:
+        E As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -444,7 +456,7 @@ Tabletwarehouse As screen:
             PressedFill: =RGBA(0, 120, 212, 1)
             Visible: |-
                 =If(
-                    cube_location = "location A",
+                    cube_location = "E",
                     true,
                     false
                 )
@@ -453,7 +465,7 @@ Tabletwarehouse As screen:
             Y: =478
             ZIndex: =44
 
-        Rectangle1_6 As rectangle:
+        F As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -465,7 +477,7 @@ Tabletwarehouse As screen:
             PressedFill: =RGBA(0, 120, 212, 1)
             Visible: |-
                 =If(
-                    cube_location = "location A",
+                    cube_location = "F",
                     true,
                     false
                 )
@@ -474,7 +486,7 @@ Tabletwarehouse As screen:
             Y: =545
             ZIndex: =45
 
-        Rectangle1_2 As rectangle:
+        G As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -486,7 +498,7 @@ Tabletwarehouse As screen:
             PressedFill: =RGBA(0, 120, 212, 1)
             Visible: |-
                 =If(
-                    cube_location = "location A",
+                    cube_location = "G",
                     true,
                     false
                 )
@@ -495,7 +507,7 @@ Tabletwarehouse As screen:
             Y: =381
             ZIndex: =46
 
-        Rectangle1_7 As rectangle:
+        H As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -507,7 +519,7 @@ Tabletwarehouse As screen:
             PressedFill: =RGBA(0, 120, 212, 1)
             Visible: |-
                 =If(
-                    cube_location = "location A",
+                    cube_location = "H",
                     true,
                     false
                 )
@@ -516,7 +528,7 @@ Tabletwarehouse As screen:
             Y: =413
             ZIndex: =47
 
-        Rectangle1_8 As rectangle:
+        I As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -528,7 +540,7 @@ Tabletwarehouse As screen:
             PressedFill: =RGBA(0, 120, 212, 1)
             Visible: |-
                 =If(
-                    cube_location = "location A",
+                    cube_location = "I",
                     true,
                     false
                 )
@@ -537,7 +549,7 @@ Tabletwarehouse As screen:
             Y: =445.3
             ZIndex: =48
 
-        Rectangle1_9 As rectangle:
+        J As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -549,7 +561,7 @@ Tabletwarehouse As screen:
             PressedFill: =RGBA(0, 120, 212, 1)
             Visible: |-
                 =If(
-                    cube_location = "location A",
+                    cube_location = "J",
                     true,
                     false
                 )
