@@ -4379,14 +4379,7 @@
         "PressedBorderColor",
         "PressedColor",
         "PressedFill",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "OnSelect",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "OnSelect",
         "AutoDisableOnSelect",
         "Tooltip",
         "ContentLanguage",
@@ -6577,14 +6570,7 @@
         "BorderColor",
         "BorderStyle",
         "BorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "0",
-          "InvariantPropertyName": "Default",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Default",
         "DisabledBorderColor",
         "DisplayMode",
         "Height",
