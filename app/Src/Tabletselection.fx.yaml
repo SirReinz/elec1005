@@ -196,7 +196,6 @@ Tabletselection As screen:
         Fill: =RGBA(255, 255, 255, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
         Height: =79
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
@@ -215,6 +214,7 @@ Tabletselection As screen:
         RadiusTopRight: =0
         Size: =35
         Text: ="Go Back"
+        Underline: =true
         VerticalAlign: =VerticalAlign.Top
         Width: =294
         X: =35
@@ -267,7 +267,7 @@ Tabletselection As screen:
         BorderColor: =RGBA(255, 255, 255, 1)
         BorderThickness: =2
         Color: =RGBA(51, 51, 51, 1)
-        Default: ="文本输入"
+        Default: ="Hello"
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -294,7 +294,7 @@ Tabletselection As screen:
         BorderColor: =RGBA(255, 255, 255, 1)
         BorderThickness: =2
         Color: =RGBA(51, 51, 51, 1)
-        Default: ="文本输入"
+        Default: ="{user}"
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
