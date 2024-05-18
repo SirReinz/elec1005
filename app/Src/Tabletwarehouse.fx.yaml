@@ -38,9 +38,9 @@ Tabletwarehouse As screen:
         Size: =90
         Text: ="Warehouse"
         VerticalAlign: =VerticalAlign.Top
-        Width: =606
-        X: =74
-        Y: =62
+        Width: =733
+        X: =34
+        Y: =31
         ZIndex: =3
 
     "'Group 3 1_3' As image":
@@ -366,8 +366,8 @@ Tabletwarehouse As screen:
         Text: =""
         VerticalAlign: =VerticalAlign.Top
         Width: =242
-        X: =77
-        Y: =193
+        X: =83
+        Y: =201
         ZIndex: =17
 
     "'Hello,_2' As label":

@@ -334,7 +334,7 @@ Tabletproject_1 As screen:
         Size: =60
         Text: ="Hello,"
         VerticalAlign: =VerticalAlign.Top
-        Width: =187
+        Width: =230
         X: =1477
         Y: =48
         ZIndex: =18
@@ -374,6 +374,7 @@ Tabletproject_1 As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: =Navigate(Tabletlogin, ScreenTransition.Cover)
         PaddingBottom: =7
         PaddingLeft: =32
         PaddingRight: =32
@@ -597,7 +598,13 @@ Tabletproject_1 As screen:
     msft_Slider_1 As slider:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
-        Default: =0
+        Default: |-
+            =// 设置 Gallery 控件的 Items 属性为数据集合
+            Items = Employees
+            
+            // 调整 Gallery 控件的布局和样式
+            Layout = Vertical
+            ItemHeight = 100
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
         HandleActiveFill: =RGBA(255, 255, 255, 1)
@@ -612,8 +619,8 @@ Tabletproject_1 As screen:
         ValueFill: =RGBA(102, 102, 102, 1)
         ValueHoverFill: =RGBA(0, 120, 212, 1)
         Width: =696
-        X: =75
-        Y: =312
+        X: =76
+        Y: =297
         ZIndex: =27
 
     "'Line 3 (1) 1_5' As image":

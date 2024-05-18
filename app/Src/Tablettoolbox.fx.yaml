@@ -558,6 +558,6 @@ Tablettoolbox As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =1920
-        Y: =210
+        Y: =254
         ZIndex: =27
 
