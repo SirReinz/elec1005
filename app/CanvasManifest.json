@@ -134,8 +134,8 @@
   },
   "ScreenOrder": [
     "Tabletlogin",
-    "Tabletselection",
     "Tablettoolbox",
+    "Tabletselection",
     "Tabletproject",
     "Tableterrorlist",
     "Tabletwarehouse",
