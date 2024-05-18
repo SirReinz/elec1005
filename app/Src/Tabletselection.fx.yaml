@@ -228,10 +228,17 @@ Tabletselection As screen:
         Y: =40
         ZIndex: =15
 
-    logout_Group_9 As group:
+    goBack_Group_3 As group:
         Height: =5
         Width: =5
         X: =40
+        Y: =40
+        ZIndex: =18
+
+    logout_Group_9 As group:
+        Height: =5
+        Width: =5
+        X: =-522
         Y: =40
         ZIndex: =18
 
@@ -249,16 +256,9 @@ Tabletselection As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =139
-            X: =1730
+            X: =1208
             Y: =118
             ZIndex: =17
-
-    goBack_Group_3 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =18
 
     logout_Group_4 As group:
         Height: =5
