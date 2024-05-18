@@ -329,7 +329,7 @@ Tablettoolbox As screen:
         Y: =20
         ZIndex: =15
 
-    logout_Group_9 As group:
+    logout_Group_3 As group:
         Height: =5
         Width: =5
         X: =40
@@ -396,4 +396,22 @@ Tablettoolbox As screen:
             X: =1301
             Y: =109
             ZIndex: =18
+
+        Image2_3 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =136
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =Logout_2
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =139
+            X: =1730
+            Y: =118
+            ZIndex: =19
 
