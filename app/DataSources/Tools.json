@@ -30,18 +30,17 @@
       "Editor": "Modified By",
       "Editor#Claims": "Modified By Claims",
       "ID": "ID",
-      "message": "message",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
-      "time": "time",
       "Title": "Title",
-      "username": "username"
+      "tool2": "tool2",
+      "tools": "tools"
     },
     "DatasetName": "https://unisydneyedu.sharepoint.com/sites/Group14Assignment2",
     "EncodeDataset": true,
     "IsSampleData": false,
     "IsWritable": true,
-    "Name": "Discussion Test",
+    "Name": "Tools",
     "Type": "ConnectedDataSourceInfo"
   }
 ]
