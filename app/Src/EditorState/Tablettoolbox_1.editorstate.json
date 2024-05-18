@@ -3239,7 +3239,7 @@
       "MetaDataIDKey": "",
       "Name": "Image2_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 17,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3703,7 +3703,7 @@
       "MetaDataIDKey": "",
       "Name": "logout_Group_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 19,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
