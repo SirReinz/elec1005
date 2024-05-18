@@ -41,7 +41,7 @@ Tabletdiscussion As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =1926.9998779296875
-            Y: =210.76513671875
+            Y: =210
             ZIndex: =3
 
         Discussion As label:

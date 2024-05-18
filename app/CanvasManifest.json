@@ -130,14 +130,14 @@
     "PublishDataLocally": false,
     "PublishResourcesLocally": false,
     "PublishTarget": "player",
-    "UserLocale": "zh-CN"
+    "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Tabletdiscussion",
-    "Tabletselection",
-    "Tabletproject",
-    "Tabletwarehouse",
+    "Tabletlogin",
     "Tablettoolbox",
-    "Tabletlogin"
+    "Tabletproject",
+    "Tabletselection",
+    "Tabletwarehouse",
+    "Tabletdiscussion"
   ]
 }
