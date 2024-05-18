@@ -130,10 +130,11 @@
     "PublishDataLocally": false,
     "PublishResourcesLocally": false,
     "PublishTarget": "player",
-    "UserLocale": "zh-CN"
+    "UserLocale": "en-US"
   },
   "ScreenOrder": [
     "Tabletlogin",
+    "Tablet_register",
     "Tablettoolbox",
     "Tabletselection",
     "Tabletproject",

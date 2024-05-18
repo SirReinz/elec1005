@@ -1,7 +1,18 @@
 Tabletwarehouse As screen:
     Height: =911
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
-    OnVisible: =ClearCollect(RecentSearches, [])
+    OnVisible: |-
+        =//ClearCollect(RecentSearches, []) + 
+        UpdateContext({updateTriggered: false});
+        If(
+            Not(updateTriggered),
+            UpdateIf(
+                Tools,
+                true, // Condition to update all records
+                {called: "false"} // New value for the "Called" column
+            );
+            UpdateContext({updateTriggered: true})
+        )
     Width: =1920
 
     "'Group 3 1_3' As image":
@@ -58,8 +69,8 @@ Tabletwarehouse As screen:
         Text: ="Search for item"
         VerticalAlign: =VerticalAlign.Top
         Width: =500
-        X: =866
-        Y: =268
+        X: =837
+        Y: =263
         ZIndex: =3
 
     "'Currently searching: N/A' As label":
@@ -70,42 +81,20 @@ Tabletwarehouse As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         FontWeight: =FontWeight.Semibold
-        Height: =78
-        LineHeight: =0.8666667
+        Height: =103
+        LineHeight: =1.1
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
-        Size: =33.75
+        Size: =30
         Text: |-
-            ="Currently searching: " & search_name
+            ="Currently searching:" & Char(10) & search_name
         VerticalAlign: =VerticalAlign.Top
-        Width: =460
-        X: =74
-        Y: =280
+        Width: =659
+        X: =91
+        Y: =253
         ZIndex: =4
-
-    Filters As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(66, 66, 66, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        FontWeight: =FontWeight.Semibold
-        Height: =58
-        LineHeight: =0.53333336
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =20
-        Size: =33.75
-        Text: ="Filters"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =155
-        X: =1425
-        Y: =465
-        ZIndex: =5
 
     "'Recent searches' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -128,37 +117,6 @@ Tabletwarehouse As screen:
         X: =835
         Y: =472
         ZIndex: =6
-
-    Type_Dropdown As dropdown:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        ChevronBackground: =RGBA(255, 255, 255, 1)
-        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
-        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
-        ChevronFill: =RGBA(51, 51, 51, 1)
-        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
-        ChevronHoverFill: =RGBA(33, 33, 33, 1)
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =41
-        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        HoverColor: =RGBA(51, 51, 51, 1)
-        HoverFill: =RGBA(212, 212, 212, 1)
-        Items: =["Type"]
-        PaddingBottom: =15
-        PaddingLeft: =16
-        PaddingRight: =16
-        PaddingTop: =15
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =RGBA(0, 120, 212, 1)
-        SelectionFill: =RGBA(255, 255, 255, 1)
-        Size: =15
-        Width: =185
-        X: =1588
-        Y: =482
-        ZIndex: =8
 
     search_Input As text:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -194,8 +152,8 @@ Tabletwarehouse As screen:
         RadiusTopRight: =0
         Size: =22.5
         Width: =510
-        X: =835
-        Y: =340
+        X: =837
+        Y: =342
         ZIndex: =10
 
     "'Line 3 (1) 1_1' As image":
@@ -262,7 +220,7 @@ Tabletwarehouse As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: =Back();
+            OnSelect: =Navigate(Tablettoolbox)
             PaddingBottom: =7
             PaddingLeft: =32
             PaddingRight: =32
@@ -292,7 +250,7 @@ Tabletwarehouse As screen:
             FontWeight: =FontWeight.Semibold
             Height: =46
             LineHeight: =0.53333336
-            OnSelect: =Navigate(Tabletselection)
+            OnSelect: =Navigate(Tablettoolbox)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -320,10 +278,19 @@ Tabletwarehouse As screen:
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
         OnSelect: |-
             =If(
-                !IsBlank(LookUp(Tools, tool_name = search_Input.Text)),
-                Set(cube_location, LookUp(Tools, tool_name = search_Input.Text).location) + 
-                Set(search_name, LookUp(Tools, tool_name = search_Input.Text).tool_name) + Reset(search_Input),
-                Notify("Tool not found", NotificationType.Error) + Set(cube_location, "") + Reset(search_Input) + Set(search_name, "N/A")
+                !IsBlank(LookUp(Tools, tool_name = search_Input.Text)) && !IsBlank(search_Input.Text),
+                Patch(
+                    Tools,
+                    LookUp(Tools, tool_name = search_Input.Text),
+                    { called: "True" }
+                );
+                Set(cube_location, LookUp(Tools, tool_name = search_Input.Text).location) +
+                Set(search_name, LookUp(Tools, tool_name = search_Input.Text).tool_name) + 
+                Reset(search_Input),
+                Notify("Tool not found", NotificationType.Error) + 
+                Set(cube_location, "") + 
+                Reset(search_Input) + 
+                Set(search_name, "N/A")
             )
         PaddingBottom: =7
         PaddingLeft: =32
@@ -336,11 +303,11 @@ Tabletwarehouse As screen:
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Size: =15
-        Text: ="click to research"
+        Size: =25
+        Text: ="Search"
         Width: =222
-        X: =1366
-        Y: =340
+        X: =1368
+        Y: =347
         ZIndex: =38
 
     ListBox2 As listbox:
@@ -352,11 +319,25 @@ Tabletwarehouse As screen:
         DisabledSelectionColor: =RGBA(166, 166, 166, 1)
         DisabledSelectionFill: =RGBA(220, 220, 220, 1)
         Font: =Font.'Segoe UI'
-        Height: =367
+        Height: =340
         HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
-        Items: =Tools
+        Items: =Filter(Tools, called = "True")
+        LineHeight: =1.1
+        OnSelect: |-
+            =If(
+                !IsBlank(LookUp(Tools, tool_name = First(ListBox2.SelectedItems).tool_name)) && !IsBlank(First(ListBox2.SelectedItems).tool_name),
+                Patch(
+                    Tools,
+                    LookUp(Tools, tool_name = First(ListBox2.SelectedItems).tool_name),
+                    { called: "True" }
+                );
+                Set(cube_location, LookUp(Tools, tool_name = First(ListBox2.SelectedItems).tool_name).location) + 
+                Set(search_name, LookUp(Tools, tool_name = First(ListBox2.SelectedItems).tool_name).tool_name) + 
+                Reset(ListBox2),
+                Reset(ListBox2)
+            )
         PaddingBottom: =5
         PaddingLeft: =5
         PaddingRight: =5
@@ -365,10 +346,11 @@ Tabletwarehouse As screen:
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
         SelectionFill: =RGBA(0, 120, 212, 1)
-        Size: =13
-        Width: =1064
-        X: =837
-        Y: =541
+        SelectMultiple: =false
+        Size: =25
+        Width: =984
+        X: =835
+        Y: =553
         ZIndex: =70
 
     Group1 As group:
@@ -378,7 +360,7 @@ Tabletwarehouse As screen:
         Y: =40
         ZIndex: =70
 
-        Rectangle1 As rectangle:
+        A As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -399,7 +381,7 @@ Tabletwarehouse As screen:
             Y: =381
             ZIndex: =39
 
-        Rectangle1_1 As rectangle:
+        B As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -408,10 +390,16 @@ Tabletwarehouse As screen:
             FocusedBorderThickness: =4
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
+            OnSelect: |-
+                =If(
+                    cube_location = "B",
+                    true,
+                    false
+                )
             PressedFill: =RGBA(0, 120, 212, 1)
             Visible: |-
                 =If(
-                    cube_location = "location A",
+                    cube_location = "B",
                     true,
                     false
                 )
@@ -420,7 +408,7 @@ Tabletwarehouse As screen:
             Y: =413
             ZIndex: =40
 
-        Rectangle1_3 As rectangle:
+        C As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -429,10 +417,16 @@ Tabletwarehouse As screen:
             FocusedBorderThickness: =4
             Height: =31
             HoverFill: =RGBA(0, 120, 212, 1)
+            OnSelect: |-
+                =If(
+                    cube_location = "B",
+                    true,
+                    false
+                )
             PressedFill: =RGBA(0, 120, 212, 1)
             Visible: |-
                 =If(
-                    cube_location = "location A",
+                    cube_location = "C",
                     true,
                     false
                 )
@@ -441,7 +435,7 @@ Tabletwarehouse As screen:
             Y: =445.3
             ZIndex: =42
 
-        Rectangle1_4 As rectangle:
+        D As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -453,7 +447,7 @@ Tabletwarehouse As screen:
             PressedFill: =RGBA(0, 120, 212, 1)
             Visible: |-
                 =If(
-                    cube_location = "location A",
+                    cube_location = "D",
                     true,
                     false
                 )
@@ -462,7 +456,7 @@ Tabletwarehouse As screen:
             Y: =512
             ZIndex: =43
 
-        Rectangle1_5 As rectangle:
+        E As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -474,7 +468,7 @@ Tabletwarehouse As screen:
             PressedFill: =RGBA(0, 120, 212, 1)
             Visible: |-
                 =If(
-                    cube_location = "location A",
+                    cube_location = "E",
                     true,
                     false
                 )
@@ -483,7 +477,7 @@ Tabletwarehouse As screen:
             Y: =478
             ZIndex: =44
 
-        Rectangle1_6 As rectangle:
+        F As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -495,7 +489,7 @@ Tabletwarehouse As screen:
             PressedFill: =RGBA(0, 120, 212, 1)
             Visible: |-
                 =If(
-                    cube_location = "location A",
+                    cube_location = "F",
                     true,
                     false
                 )
@@ -504,7 +498,7 @@ Tabletwarehouse As screen:
             Y: =545
             ZIndex: =45
 
-        Rectangle1_2 As rectangle:
+        G As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -516,7 +510,7 @@ Tabletwarehouse As screen:
             PressedFill: =RGBA(0, 120, 212, 1)
             Visible: |-
                 =If(
-                    cube_location = "location A",
+                    cube_location = "G",
                     true,
                     false
                 )
@@ -525,7 +519,7 @@ Tabletwarehouse As screen:
             Y: =381
             ZIndex: =46
 
-        Rectangle1_7 As rectangle:
+        H As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -537,7 +531,7 @@ Tabletwarehouse As screen:
             PressedFill: =RGBA(0, 120, 212, 1)
             Visible: |-
                 =If(
-                    cube_location = "location A",
+                    cube_location = "H",
                     true,
                     false
                 )
@@ -546,7 +540,7 @@ Tabletwarehouse As screen:
             Y: =413
             ZIndex: =47
 
-        Rectangle1_8 As rectangle:
+        I As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -558,7 +552,7 @@ Tabletwarehouse As screen:
             PressedFill: =RGBA(0, 120, 212, 1)
             Visible: |-
                 =If(
-                    cube_location = "location A",
+                    cube_location = "I",
                     true,
                     false
                 )
@@ -567,7 +561,7 @@ Tabletwarehouse As screen:
             Y: =445.3
             ZIndex: =48
 
-        Rectangle1_9 As rectangle:
+        J As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -579,7 +573,7 @@ Tabletwarehouse As screen:
             PressedFill: =RGBA(0, 120, 212, 1)
             Visible: |-
                 =If(
-                    cube_location = "location A",
+                    cube_location = "J",
                     true,
                     false
                 )
