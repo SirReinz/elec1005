@@ -872,7 +872,7 @@ Tabletwarehouse As screen:
         HoverFill: =RGBA(0, 120, 212, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =35.5
-        X: =343
+        X: =344.7
         Y: =628
         ZIndex: =68
 
@@ -887,7 +887,7 @@ Tabletwarehouse As screen:
         HoverFill: =RGBA(0, 120, 212, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =35.5
-        X: =343
+        X: =344.7
         Y: =661
         ZIndex: =69
 

@@ -455,13 +455,6 @@ Tabletproject As screen:
         Y: =147
         ZIndex: =84
 
-    goBack_Group_4 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =85
-
     Label5 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -478,5 +471,12 @@ Tabletproject As screen:
         Width: =938
         X: =67
         Y: =18
+        ZIndex: =85
+
+    goBack_Group_4 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
         ZIndex: =85
 
