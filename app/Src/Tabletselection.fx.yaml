@@ -213,7 +213,7 @@ Tabletselection As screen:
         HoverFill: =RGBA(212, 212, 212, 1)
         Items: ='Project List'
         LineHeight: =2
-        OnSelect: =Reset(timeSent_ListBox_1) + Navigate(Tabletproject) + Set(projectName, First(timeSent_ListBox_1.SelectedItems).Title)
+        OnSelect: =Reset(timeSent_ListBox_1) + Navigate(Tabletproject) + Set(projectName, First(timeSent_ListBox_1.SelectedItems).)
         PaddingBottom: =6
         PaddingLeft: =6
         PaddingRight: =6
