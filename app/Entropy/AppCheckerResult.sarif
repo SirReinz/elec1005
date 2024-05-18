@@ -3953,19 +3953,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tabletlogin.msft_TextInput_1.AccessibleLabel"
+                  "fullyQualifiedName": "Tabletlogin.username_input.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tabletlogin.msft_TextInput_1.AccessibleLabel",
+                  "fullyQualifiedName": "Tabletlogin.username_input.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Tabletlogin",
-                "type": "Tabletlogin.msft_TextInput_1"
+                "type": "Tabletlogin.username_input"
               }
             }
           ],
@@ -3983,19 +3983,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tabletlogin.msft_TextInput_2.AccessibleLabel"
+                  "fullyQualifiedName": "Tabletlogin.password_input.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tabletlogin.msft_TextInput_2.AccessibleLabel",
+                  "fullyQualifiedName": "Tabletlogin.password_input.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Tabletlogin",
-                "type": "Tabletlogin.msft_TextInput_2"
+                "type": "Tabletlogin.password_input"
               }
             }
           ],
@@ -5123,6 +5123,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.username"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.username",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "username",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.isVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.isVisible",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "isVisible",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.image27181365"
                 }
               ],
@@ -5146,7 +5206,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 6
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -5176,7 +5236,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 6
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -5206,7 +5266,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 6
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -5236,7 +5296,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 6
+          "ruleIndex": 7
         }
       ],
       "tool": {
@@ -5344,6 +5404,23 @@
                 "level": "Medium",
                 "primaryCategory": "accessibility",
                 "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
+              }
+            },
+            {
+              "id": "app-UnusedVariables",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unused variable"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove the unused variable."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
               }
             },
             {

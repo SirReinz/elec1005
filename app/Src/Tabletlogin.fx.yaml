@@ -164,6 +164,9 @@ Tabletlogin As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: |-
+            =If(
+            !IsBlank(LookUp(user_info, user_name = username_input.Text && password = password_input.Text)), Navigate(Tablettoolbox) + Reset(password_input) + Set(username, username_input.Text), Set(isVisible, true) + Reset(password_input))
         PaddingBottom: =7
         PaddingLeft: =32
         PaddingRight: =32
@@ -183,7 +186,7 @@ Tabletlogin As screen:
         Y: =561
         ZIndex: =10
 
-    msft_TextInput_1 As text:
+    username_input As text:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =2
         Color: =RGBA(166, 166, 166, 1)
@@ -214,7 +217,7 @@ Tabletlogin As screen:
         Y: =234
         ZIndex: =11
 
-    msft_TextInput_2 As text:
+    password_input As text:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =2
         Color: =RGBA(166, 166, 166, 1)
