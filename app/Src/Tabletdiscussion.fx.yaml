@@ -40,7 +40,8 @@ Tabletdiscussion As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =432.5843200683594
-            X: =793.6936645507812
+            X: =798
+            Y: =18
             ZIndex: =5
 
         "'Rectangle 5' As rectangle":
