@@ -366,6 +366,22 @@ Tabletwarehouse As screen:
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
         Items: =Filter(Tools, called = "True")
+        OnSelect: |-
+            =If(
+                !IsBlank(LookUp(Tools, tool_name = search_Input.Text)),
+                Patch(
+                    Tools,
+                    LookUp(Tools, tool_name = search_Input.Text),
+                    { called: "True" }
+                );
+                Set(cube_location, LookUp(Tools, tool_name = search_Input.Text).location) + 
+                Set(search_name, LookUp(Tools, tool_name = search_Input.Text).tool_name) + 
+                Reset(search_Input),
+                Notify("Tool not found", NotificationType.Error) + 
+                Set(cube_location, "") + 
+                Reset(search_Input) + 
+                Set(search_name, "N/A") + Reset(ListBox1)
+            )
         PaddingBottom: =5
         PaddingLeft: =5
         PaddingRight: =5
