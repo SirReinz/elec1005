@@ -3,19 +3,6 @@ Tabletselection As screen:
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
     Width: =1920
 
-    "'Current project page 1' As groupContainer.manualLayoutContainer":
-        Height: =911
-        LayoutMode: ="manual"
-        Width: =1920
-        ZIndex: =1
-
-        logout_Group_9 As group:
-            Height: =5
-            Width: =5
-            X: =-1261
-            Y: =33
-            ZIndex: =5
-
     Page As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -197,30 +184,38 @@ Tabletselection As screen:
         Y: =356
         ZIndex: =12
 
-    timeSent_ListBox_1 As listbox:
+    ListBox1 As listbox:
         BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(51, 51, 51, 1)
-        Default: ="Value1"
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisabledSelectionColor: =RGBA(166, 166, 166, 1)
         DisabledSelectionFill: =RGBA(220, 220, 220, 1)
         Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Segoe UI'
         Height: =555
         HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
         Items: ='Project List'
-        LineHeight: =2
-        OnSelect: =Reset(timeSent_ListBox_1) + Navigate(Tabletproject) + Set(projectName, First(timeSent_ListBox_1.SelectedItems).标题)
-        PaddingBottom: =6
-        PaddingLeft: =6
-        PaddingRight: =6
-        PaddingTop: =6
+        LineHeight: =1
+        OnSelect: |-
+            =If(
+                !IsBlank(First(ListBox1.SelectedItems).'Project Name'),
+                Set(
+                    projectName,
+                    First(ListBox1.SelectedItems).'Project Name'
+                ) + Navigate(Tabletproject)
+            )
+        PaddingBottom: =5
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =5
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
+        SelectionColor: =RGBA(0, 0, 0, 0)
         SelectionFill: =RGBA(0, 120, 212, 1)
         Size: =40
         Width: =1647

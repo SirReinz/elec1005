@@ -476,21 +476,3 @@ Tabletproject As screen:
         Y: =40
         ZIndex: =85
 
-    Label1 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Courier New'
-        FontWeight: =FontWeight.Bold
-        Height: =122
-        Size: =70
-        Text: =
-        Width: =926
-        X: =791
-        Y: =71
-        ZIndex: =86
-
