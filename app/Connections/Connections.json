@@ -17,6 +17,9 @@
           "Discussion Test": {
             "tableName": "04182feb-fb33-4906-86d1-8c807a6c874b"
           },
+          "Project List": {
+            "tableName": "cd1a8096-bbf9-4175-815b-d027ee1f22cb"
+          },
           "Tools": {
             "tableName": "ca713043-4be7-4382-bfa1-1ff69a15ae56"
           },
@@ -31,7 +34,8 @@
       "Discussion List",
       "Discussion Test",
       "user_info",
-      "Tools"
+      "Tools",
+      "Project List"
     ],
     "dependencies": {},
     "dependents": [],
