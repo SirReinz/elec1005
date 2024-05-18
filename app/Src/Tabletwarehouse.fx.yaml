@@ -209,7 +209,7 @@ Tabletwarehouse As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: =Back();
+            OnSelect: =Navigate(Tablettoolbox)
             PaddingBottom: =7
             PaddingLeft: =32
             PaddingRight: =32
@@ -239,7 +239,7 @@ Tabletwarehouse As screen:
             FontWeight: =FontWeight.Semibold
             Height: =46
             LineHeight: =0.53333336
-            OnSelect: =Navigate(Tabletselection)
+            OnSelect: =Navigate(Tablettoolbox)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0

@@ -134,6 +134,7 @@
   },
   "ScreenOrder": [
     "Tabletlogin",
+    "Tablet_register",
     "Tablettoolbox",
     "Tabletselection",
     "Tabletproject",

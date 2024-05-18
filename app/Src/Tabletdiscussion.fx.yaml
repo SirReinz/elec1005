@@ -331,9 +331,8 @@ Tabletdiscussion As screen:
         SelectionFill: =RGBA(0, 120, 212, 1)
         SelectMultiple: =false
         Size: =12.75
-        Width: =320
-        X: =5
-        Y: =364
+        Width: =325
+        Y: =347
         ZIndex: =23
 
     message_input As text:
