@@ -37,7 +37,7 @@ Tabletproject As screen:
             FontWeight: =FontWeight.Semibold
             Height: =46
             LineHeight: =0.53333336
-            OnSelect: =Navigate(Tablettoolbox)
+            OnSelect: =Navigate(Tabletselection)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -64,7 +64,7 @@ Tabletproject As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: =Navigate(Tablettoolbox)
+            OnSelect: =Navigate(Tabletselection)
             PaddingBottom: =7
             PaddingLeft: =32
             PaddingRight: =32
