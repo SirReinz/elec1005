@@ -1,16 +1,16 @@
-Tabletproject As screen:
+Tabletproject_1 As screen:
     Height: =911
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
     Width: =1920
 
-    "'Current project page 2' As groupContainer.manualLayoutContainer":
+    "'Current project page 2_1' As groupContainer.manualLayoutContainer":
         Height: =887.5
         LayoutMode: ="manual"
-        Width: =1921.2628173828125
+        Width: =1920
         Y: =9
         ZIndex: =1
 
-        "'Ellipse 1_2' As image":
+        "'Ellipse 1_5' As image":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -27,7 +27,7 @@ Tabletproject As screen:
             X: =1714.8525390625
             ZIndex: =2
 
-        "'Robot Peter' As label":
+        "'Robot Peter_1' As label":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             Color: =RGBA(0, 0, 0, 1)
@@ -49,7 +49,7 @@ Tabletproject As screen:
             Y: =46.5
             ZIndex: =4
 
-        "'Group 3 1_2' As image":
+        "'Group 3 1_5' As image":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -66,7 +66,7 @@ Tabletproject As screen:
             Y: =15.5
             ZIndex: =5
 
-        "'Group 3 2_1' As image":
+        "'Group 3 2_2' As image":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -83,7 +83,7 @@ Tabletproject As screen:
             Y: =833.5
             ZIndex: =6
 
-        "'2024 technology' As label":
+        "'2024 technology_1' As label":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             Color: =RGBA(0, 0, 0, 1)
@@ -107,7 +107,7 @@ Tabletproject As screen:
             Y: =833.5
             ZIndex: =7
 
-        Logout_2 As label:
+        Logout_5 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             Color: =RGBA(235.875, 28.501562, 28.501562, 1)
@@ -129,7 +129,7 @@ Tabletproject As screen:
             Y: =168.5
             ZIndex: =8
 
-        "'Go Back ➤_2' As label":
+        "'Go Back ➤_5' As label":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             Color: =RGBA(66, 66, 66, 1)
@@ -151,7 +151,7 @@ Tabletproject As screen:
             Y: =185.5
             ZIndex: =9
 
-    "'Rectangle 28' As image":
+    "'Rectangle 28_1' As image":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -168,7 +168,7 @@ Tabletproject As screen:
         Y: =379.5
         ZIndex: =10
 
-    "'Rectangle 35' As rectangle":
+    "'Rectangle 35_1' As rectangle":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         DisabledFill: =RGBA(166, 166, 166, 1)
@@ -182,7 +182,7 @@ Tabletproject As screen:
         Y: =291
         ZIndex: =11
 
-    "'Auto Detected Progress' As label":
+    "'Auto Detected Progress_1' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         Color: =RGBA(0, 0, 0, 1)
@@ -204,7 +204,7 @@ Tabletproject As screen:
         Y: =259.5
         ZIndex: =12
 
-    "'18% Completed 50% Expected' As label":
+    "'18% Completed 50% Expected_1' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         Color: =RGBA(0, 0, 0, 1)
@@ -228,7 +228,7 @@ Tabletproject As screen:
         Y: =379.5
         ZIndex: =13
 
-    "'Estimated Delay: 3 days' As label":
+    "'Estimated Delay: 3 days_1' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         Color: =RGBA(0, 0, 0, 1)
@@ -251,7 +251,7 @@ Tabletproject As screen:
         Y: =486.5
         ZIndex: =14
 
-    "'Next Task:' As label":
+    "'Next Task:_1' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         Color: =RGBA(0, 0, 0, 1)
@@ -274,7 +274,7 @@ Tabletproject As screen:
         Y: =666.5
         ZIndex: =15
 
-    "'What would you like to do?' As label":
+    "'What would you like to do?_1' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         Color: =RGBA(0, 0, 0, 1)
@@ -296,7 +296,7 @@ Tabletproject As screen:
         Y: =290.5
         ZIndex: =16
 
-    "'Fix errors before proceeding' As label":
+    "'Fix errors before proceeding_1' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         Color: =RGBA(255, 0, 0, 1)
@@ -318,7 +318,7 @@ Tabletproject As screen:
         Y: =719.5
         ZIndex: =17
 
-    "'Hello,_1' As label":
+    "'Hello,_4' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         Color: =RGBA(0, 0, 0, 1)
@@ -339,7 +339,7 @@ Tabletproject As screen:
         Y: =48
         ZIndex: =18
 
-    msft_Label_2 As label:
+    msft_Label_5 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         Color: =RGBA(51, 51, 51, 1)
@@ -359,7 +359,7 @@ Tabletproject As screen:
         Y: =133
         ZIndex: =19
 
-    msft_Button_10 As button:
+    msft_Button_26 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
@@ -392,7 +392,7 @@ Tabletproject As screen:
         Y: =188
         ZIndex: =20
 
-    msft_Button_11 As button:
+    msft_Button_25 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
@@ -425,7 +425,7 @@ Tabletproject As screen:
         Y: =176
         ZIndex: =21
 
-    msft_Button_12 As button:
+    msft_Button_31 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
@@ -459,7 +459,7 @@ Tabletproject As screen:
         Y: =833
         ZIndex: =22
 
-    msft_Button_13 As button:
+    msft_Button_27 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
@@ -492,7 +492,7 @@ Tabletproject As screen:
         Y: =410
         ZIndex: =23
 
-    msft_Button_14 As button:
+    msft_Button_28 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
@@ -525,7 +525,7 @@ Tabletproject As screen:
         Y: =540
         ZIndex: =24
 
-    msft_Button_15 As button:
+    msft_Button_30 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
@@ -558,7 +558,7 @@ Tabletproject As screen:
         Y: =800
         ZIndex: =25
 
-    msft_Button_16 As button:
+    msft_Button_29 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
@@ -591,7 +591,7 @@ Tabletproject As screen:
         Y: =670
         ZIndex: =26
 
-    msft_Slider As slider:
+    msft_Slider_1 As slider:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         Default: =0
@@ -613,7 +613,7 @@ Tabletproject As screen:
         Y: =312
         ZIndex: =27
 
-    "'Line 3 (1) 1_3' As image":
+    "'Line 3 (1) 1_5' As image":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
