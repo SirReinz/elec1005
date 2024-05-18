@@ -488,7 +488,7 @@ Tabletproject As screen:
         FontWeight: =FontWeight.Bold
         Height: =122
         Size: =70
-        Text: =
+        Text: =projectName
         Width: =926
         X: =791
         Y: =71
