@@ -483,7 +483,7 @@ Tabletwarehouse As screen:
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =35.5
         X: =100.5
-        Y: =445
+        Y: =445.3
         ZIndex: =42
 
     Rectangle1_4 As rectangle:
@@ -573,7 +573,7 @@ Tabletwarehouse As screen:
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =35.5
         X: =180
-        Y: =445
+        Y: =445.3
         ZIndex: =48
 
     Rectangle1_9 As rectangle:
@@ -632,7 +632,7 @@ Tabletwarehouse As screen:
         HoverFill: =RGBA(0, 120, 212, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =35.5
-        X: =257
+        X: =257.7
         Y: =381
         ZIndex: =52
 
@@ -647,7 +647,7 @@ Tabletwarehouse As screen:
         HoverFill: =RGBA(0, 120, 212, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =35.5
-        X: =257
+        X: =257.7
         Y: =413
         ZIndex: =53
 
@@ -662,8 +662,8 @@ Tabletwarehouse As screen:
         HoverFill: =RGBA(0, 120, 212, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =35.5
-        X: =257
-        Y: =445
+        X: =257.7
+        Y: =445.3
         ZIndex: =54
 
     Rectangle1_15 As rectangle:
@@ -677,7 +677,7 @@ Tabletwarehouse As screen:
         HoverFill: =RGBA(0, 120, 212, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =35.5
-        X: =257
+        X: =257.7
         Y: =512
         ZIndex: =55
 
@@ -692,7 +692,7 @@ Tabletwarehouse As screen:
         HoverFill: =RGBA(0, 120, 212, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =35.5
-        X: =257
+        X: =257.7
         Y: =478
         ZIndex: =56
 
@@ -707,7 +707,7 @@ Tabletwarehouse As screen:
         HoverFill: =RGBA(0, 120, 212, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =35.5
-        X: =257
+        X: =257.7
         Y: =545
         ZIndex: =57
 
