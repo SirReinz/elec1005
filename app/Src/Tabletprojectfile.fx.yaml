@@ -102,7 +102,7 @@ Tabletprojectfile As screen:
         RadiusTopLeft: =8
         RadiusTopRight: =8
         Size: =26.25
-        Text: ="Go back to Tabletselection"
+        Text: ="Go back to Mainpage"
         VerticalAlign: =VerticalAlign.Top
         Width: =518
         X: =828
@@ -133,7 +133,7 @@ Tabletprojectfile As screen:
         RadiusTopLeft: =8
         RadiusTopRight: =8
         Size: =26
-        Text: ="Go back to projects"
+        Text: ="Go back to detailed page"
         Width: =518
         X: =828
         Y: =381
