@@ -303,7 +303,11 @@ Tabletproject As screen:
     msft_Slider As slider:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
-        Default: =0
+        Default: |-
+            =msft_Slider: Employees
+            Layout: Vertical
+            ItemHeight: 100
+            recordCount: 0
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
         HandleActiveFill: =RGBA(255, 255, 255, 1)
