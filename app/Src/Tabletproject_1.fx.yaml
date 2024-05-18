@@ -485,8 +485,8 @@ Tabletproject_1 As screen:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         Default: |-
-            =// 设置 Gallery 控件的 Items 属性为数据集合
-            Items = Employees
+            =// 获取一个随机排列的数据集合，并将其设置为 Gallery 控件的 Items 属性
+            Items = Shuffle(Employees)
             
             // 调整 Gallery 控件的布局和样式
             Layout = Vertical

@@ -716,7 +716,7 @@
       "MetaDataIDKey": "",
       "Name": "Ellipse 1_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2292,7 +2292,7 @@
       "MetaDataIDKey": "",
       "Name": "Hello,_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2605,7 +2605,7 @@
       "MetaDataIDKey": "",
       "Name": "Image2_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3820,7 +3820,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_10",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4166,7 +4166,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Label_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
