@@ -452,7 +452,7 @@ Tabletproject_1 As screen:
         RadiusTopLeft: =8
         RadiusTopRight: =8
         Size: =26.25
-        Text: ="Go to back to Prjects"
+        Text: ="Go to back to Projects"
         VerticalAlign: =VerticalAlign.Top
         Width: =444
         X: =457
@@ -539,6 +539,8 @@ Tabletproject_1 As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: |
+            =Navigate(Tabletwarehouse, ScreenTransition.Cover)
         PaddingBottom: =12
         PaddingLeft: =56
         PaddingRight: =56
@@ -572,6 +574,7 @@ Tabletproject_1 As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: =Navigate(Tabletdiscussion, ScreenTransition.Cover)
         PaddingBottom: =12
         PaddingLeft: =24
         PaddingRight: =56
