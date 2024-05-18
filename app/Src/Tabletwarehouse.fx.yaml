@@ -320,7 +320,7 @@ Tabletwarehouse As screen:
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
         OnSelect: |-
             =If(
-                !IsBlank(LookUp(Tools, tool_name = search_Input.Text)),
+                !IsBlank(LookUp(Tools, tool_name = search_Input.Text)) && !IsBlank(search_Input.Text),
                 Patch(
                     Tools,
                     LookUp(Tools, tool_name = search_Input.Text),
@@ -368,19 +368,16 @@ Tabletwarehouse As screen:
         Items: =Filter(Tools, called = "True")
         OnSelect: |-
             =If(
-                !IsBlank(LookUp(Tools, tool_name = search_Input.Text)),
+                !IsBlank(LookUp(Tools, tool_name = First(ListBox2.SelectedItems).'tool_name')) && !IsBlank(First(ListBox2.SelectedItems).'tool_name'),
                 Patch(
                     Tools,
-                    LookUp(Tools, tool_name = search_Input.Text),
+                    LookUp(Tools, tool_name = First(ListBox2.SelectedItems).'tool_name'),
                     { called: "True" }
                 );
-                Set(cube_location, LookUp(Tools, tool_name = search_Input.Text).location) + 
-                Set(search_name, LookUp(Tools, tool_name = search_Input.Text).tool_name) + 
-                Reset(search_Input),
-                Notify("Tool not found", NotificationType.Error) + 
-                Set(cube_location, "") + 
-                Reset(search_Input) + 
-                Set(search_name, "N/A") + Reset(ListBox1)
+                Set(cube_location, LookUp(Tools, tool_name = First(ListBox2.SelectedItems).'tool_name').location) + 
+                Set(search_name, LookUp(Tools, tool_name = First(ListBox2.SelectedItems).'tool_name').tool_name) + 
+                Reset(ListBox2),
+                Reset(ListBox2)
             )
         PaddingBottom: =5
         PaddingLeft: =5
