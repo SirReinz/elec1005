@@ -169,8 +169,8 @@ Tableterrorlist As screen:
         HoverFill: =RGBA(0, 120, 212, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =902
-        X: =464
-        Y: =164
+        X: =469
+        Y: =254
         ZIndex: =39
 
     "'Line 3 (1) 1_5' As image":
@@ -188,6 +188,24 @@ Tableterrorlist As screen:
         Width: =1920
         Y: =210
         ZIndex: =56
+
+    Image3 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =187
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: ='1'
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =195
+        X: =527
+        Y: =14
+        ZIndex: =61
 
     logout_Group_7 As group:
         Height: =5
@@ -274,24 +292,6 @@ Tableterrorlist As screen:
             X: =1730
             Y: =118
             ZIndex: =60
-
-    Image3 As image:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =187
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: ='1'
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =195
-        X: =527
-        Y: =14
-        ZIndex: =61
 
     Icon1 As icon.FilterFlatFilled:
         BorderColor: =RGBA(166, 166, 166, 1)
