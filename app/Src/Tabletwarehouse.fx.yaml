@@ -58,8 +58,8 @@ Tabletwarehouse As screen:
         Text: ="Search for item"
         VerticalAlign: =VerticalAlign.Top
         Width: =500
-        X: =866
-        Y: =268
+        X: =837
+        Y: =263
         ZIndex: =3
 
     "'Currently searching: N/A' As label":
@@ -141,8 +141,8 @@ Tabletwarehouse As screen:
         RadiusTopRight: =0
         Size: =22.5
         Width: =510
-        X: =866
-        Y: =347
+        X: =837
+        Y: =342
         ZIndex: =10
 
     "'Line 3 (1) 1_1' As image":
@@ -295,8 +295,8 @@ Tabletwarehouse As screen:
         Size: =25
         Text: ="Search"
         Width: =222
-        X: =1397
-        Y: =352
+        X: =1368
+        Y: =347
         ZIndex: =38
 
     ListBox2 As listbox:
