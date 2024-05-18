@@ -161,7 +161,7 @@ Tabletwarehouse As screen:
         Y: =482
         ZIndex: =8
 
-    TextInputSource As text:
+    search_Input As text:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =2
         Color: =RGBA(166, 166, 166, 1)
@@ -178,8 +178,8 @@ Tabletwarehouse As screen:
         LineHeight: =1.177
         OnChange: |-
             =If(
-                !IsBlank(TextInputSource.Text),
-                Collect(RecentSearches, TextInputSource.Text);
+                !IsBlank(search_Input.Text),
+                Collect(RecentSearches, search_Input.Text);
                 If(CountRows(RecentSearches) > 5, Remove(RecentSearches, First(RecentSearches)))
             );
         PaddingBottom: =15
@@ -195,8 +195,8 @@ Tabletwarehouse As screen:
         RadiusTopRight: =0
         Size: =22.5
         Width: =510
-        X: =845
-        Y: =348
+        X: =835
+        Y: =340
         ZIndex: =10
 
     "'recent searches_Container_Vertical' As groupContainer.manualLayoutContainer":
@@ -379,8 +379,8 @@ Tabletwarehouse As screen:
             =If(
                 !IsBlank(
                     LookUp(
-                        user_info,
-                        user_name = username_input.Text && password = password_input.Text
+                        Tools,
+                        tool_name = search_Input.Text
                     )
                 ),
                 Navigate(Tabletselection) + Reset(password_input) + Set(
