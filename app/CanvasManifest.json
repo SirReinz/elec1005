@@ -134,10 +134,10 @@
   },
   "ScreenOrder": [
     "Tabletlogin",
+    "Tabletselection",
     "Tablettoolbox",
     "Tabletproject",
     "Tableterrorlist",
-    "Tabletselection_1",
     "Tabletwarehouse",
     "Tabletdiscussion"
   ]
