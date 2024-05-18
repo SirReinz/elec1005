@@ -441,3 +441,18 @@ Tabletwarehouse As screen:
         Y: =361
         ZIndex: =38
 
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 120, 212, 1)
+        FocusedBorderThickness: =4
+        Height: =31
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =35.5
+        X: =100.5
+        Y: =380.3
+        ZIndex: =39
+
