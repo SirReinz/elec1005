@@ -1,24 +1,8 @@
 Tableterrorlist As screen:
+    BackgroundImage: =
     Height: =911
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
     Width: =1920
-
-    "'Current project 1_4' As image":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =92
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: =image2733251
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =648
-        X: =82
-        Y: =44
-        ZIndex: =36
 
     goBack_Group_5 As group:
         Height: =5
@@ -88,7 +72,6 @@ Tableterrorlist As screen:
         Height: =887.5
         LayoutMode: ="manual"
         Width: =1920
-        Y: =23.5
         ZIndex: =37
 
         "'Group 3 1_5' As image":
@@ -149,22 +132,71 @@ Tableterrorlist As screen:
             Y: =833.5
             ZIndex: =7
 
-    "'Rectangle 28_2' As image":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =278
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: =image27182544
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =288
-        X: =115.5
-        Y: =410.5
-        ZIndex: =38
+        Label3 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Courier New'
+            FontWeight: =FontWeight.Semibold
+            Height: =120
+            Size: =90
+            Text: ="ERROR"
+            Width: =607
+            X: =105
+            Y: =40
+            ZIndex: =8
+
+        Icon2 As icon.Information:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(0, 120, 212, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Information
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Y: =315
+            ZIndex: =10
+
+        "'123424' As dropdown":
+            BorderColor: =RGBA(166, 166, 166, 1)
+            ChevronBackground: =RGBA(255, 255, 255, 1)
+            ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+            ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+            ChevronFill: =RGBA(33, 33, 33, 1)
+            ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+            ChevronHoverFill: =RGBA(33, 33, 33, 1)
+            Color: =RGBA(51, 51, 51, 1)
+            Default: ="Error Type"
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(212, 212, 212, 1)
+            Items: =DropDownSample
+            PaddingBottom: =5
+            PaddingLeft: =12
+            PaddingRight: =5
+            PaddingTop: =5
+            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(0, 120, 212, 1)
+            SelectionFill: =RGBA(0, 120, 212, 1)
+            Size: =13
+            X: =88
+            Y: =262
+            ZIndex: =11
 
     "'Rectangle 35_2' As rectangle":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -179,329 +211,6 @@ Tableterrorlist As screen:
         X: =1018
         Y: =307
         ZIndex: =39
-
-    "'Auto Detected Progress_2' As label":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        FontWeight: =FontWeight.Bold
-        Height: =53
-        LineHeight: =1.182231
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =33.75
-        Text: ="Auto Detected Progress"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =464
-        X: =115.5
-        Y: =290.5
-        ZIndex: =40
-
-    "'18% Completed 50% Expected_2' As label":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        FontWeight: =FontWeight.Bold
-        Height: =43
-        LineHeight: =1.182231
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =33.75
-        Text: |-
-            ="18% Completed
-            50% Expected"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =320
-        X: =420.5
-        Y: =410.5
-        ZIndex: =41
-
-    "'Estimated Delay: 3 days_2' As label":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        FontWeight: =FontWeight.Bold
-        Height: =53
-        LineHeight: =1.182231
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =33.75
-        Text: |-
-            ="Estimated Delay: 3 days"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =482
-        X: =420.5
-        Y: =517.5
-        ZIndex: =42
-
-    "'Next Task:_2' As label":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        FontWeight: =FontWeight.Bold
-        Height: =53
-        LineHeight: =1.182231
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =33.75
-        Text: |-
-            ="Next Task:"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =201
-        X: =86.5
-        Y: =697.5
-        ZIndex: =43
-
-    "'What would you like to do?_2' As label":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        FontWeight: =FontWeight.Bold
-        Height: =89
-        LineHeight: =1.182231
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =56.25
-        Text: ="What would you like to do?"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =865
-        X: =1055
-        Y: =321.5
-        ZIndex: =44
-
-    "'Fix errors before proceeding_2' As label":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(255, 0, 0, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        FontWeight: =FontWeight.Bold
-        Height: =53
-        LineHeight: =1.182231
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =33.75
-        Text: ="Fix errors before proceeding"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =551
-        X: =86.5
-        Y: =750.5
-        ZIndex: =45
-
-    msft_Button_22 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =0
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(58.506485, 26.01, 216.75, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        FontWeight: =FontWeight.Semibold
-        Height: =60
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        PaddingBottom: =7
-        PaddingLeft: =32
-        PaddingRight: =32
-        PaddingTop: =6
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        RadiusBottomLeft: =8
-        RadiusBottomRight: =8
-        RadiusTopLeft: =8
-        RadiusTopRight: =8
-        Size: =26.25
-        Text: ="Go to back to Ptojects"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =444
-        X: =497
-        Y: =851
-        ZIndex: =50
-
-    msft_Button_23 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =0
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(58.506485, 26.01, 216.75, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        FontWeight: =FontWeight.Semibold
-        Height: =60
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        PaddingBottom: =12
-        PaddingLeft: =56
-        PaddingRight: =56
-        PaddingTop: =11
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        RadiusBottomLeft: =8
-        RadiusBottomRight: =8
-        RadiusTopLeft: =8
-        RadiusTopRight: =8
-        Size: =26.25
-        Text: ="     View Error List"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =460
-        X: =1249
-        Y: =441
-        ZIndex: =51
-
-    msft_Button_25 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =0
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(58.506485, 26.01, 216.75, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        FontWeight: =FontWeight.Semibold
-        Height: =60
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        PaddingBottom: =12
-        PaddingLeft: =56
-        PaddingRight: =56
-        PaddingTop: =11
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        RadiusBottomLeft: =8
-        RadiusBottomRight: =8
-        RadiusTopLeft: =8
-        RadiusTopRight: =8
-        Size: =26.25
-        Text: ="   View Project files"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =460
-        X: =1252
-        Y: =571
-        ZIndex: =52
-
-    msft_Button_26 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =0
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(58.506485, 26.01, 216.75, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        FontWeight: =FontWeight.Semibold
-        Height: =60
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        PaddingBottom: =12
-        PaddingLeft: =56
-        PaddingRight: =56
-        PaddingTop: =11
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        RadiusBottomLeft: =8
-        RadiusBottomRight: =8
-        RadiusTopLeft: =8
-        RadiusTopRight: =8
-        Size: =26.25
-        Text: ="   Search for tools"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =460
-        X: =1249
-        Y: =831
-        ZIndex: =53
-
-    msft_Button_27 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =0
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(58.506485, 26.01, 216.75, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        FontWeight: =FontWeight.Bold
-        Height: =60
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        PaddingBottom: =12
-        PaddingLeft: =24
-        PaddingRight: =56
-        PaddingTop: =11
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        RadiusBottomLeft: =8
-        RadiusBottomRight: =8
-        RadiusTopLeft: =8
-        RadiusTopRight: =8
-        Size: =26.25
-        Text: ="Go to discussion board"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =460
-        X: =1249
-        Y: =701
-        ZIndex: =54
-
-    msft_Slider_2 As slider:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Default: =0
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        HandleActiveFill: =RGBA(255, 255, 255, 1)
-        HandleFill: =RGBA(255, 255, 255, 1)
-        HandleHoverFill: =RGBA(255, 255, 255, 1)
-        HandleSize: =42
-        Height: =70
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        RailFill: =RGBA(200, 200, 200, 1)
-        RailHoverFill: =ColorFade(RGBA(0, 120, 212, 1), 80%)
-        ValueFill: =RGBA(102, 102, 102, 1)
-        ValueHoverFill: =RGBA(0, 120, 212, 1)
-        Width: =696
-        X: =115
-        Y: =343
-        ZIndex: =55
 
     "'Line 3 (1) 1_5' As image":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -518,6 +227,24 @@ Tableterrorlist As screen:
         Width: =1920
         Y: =210
         ZIndex: =56
+
+    Image3 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =187
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: ='1'
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =195
+        X: =527
+        Y: =14
+        ZIndex: =61
 
     logout_Group_7 As group:
         Height: =5
@@ -604,4 +331,21 @@ Tableterrorlist As screen:
             X: =1730
             Y: =118
             ZIndex: =60
+
+    Icon1 As icon.FilterFlatFilled:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(0, 120, 212, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.FilterFlatFilled
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Y: =235
+        ZIndex: =62
 

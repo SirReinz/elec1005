@@ -2779,7 +2779,7 @@
       "MetaDataIDKey": "",
       "Name": "goBack_group",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4263,7 +4263,7 @@
       "MetaDataIDKey": "",
       "Name": "Image2_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
