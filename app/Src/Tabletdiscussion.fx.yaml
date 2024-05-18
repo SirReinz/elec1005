@@ -190,7 +190,7 @@ Tabletdiscussion As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             FontWeight: =FontWeight.Bold
-            Height: =41.83201599121094
+            Height: =43
             LineHeight: =1.182231
             PaddingBottom: =0
             PaddingLeft: =0
@@ -199,7 +199,7 @@ Tabletdiscussion As screen:
             Size: =26.25
             Text: ="Project overview"
             VerticalAlign: =VerticalAlign.Top
-            Width: =259.16493225097656
+            Width: =307
             X: =1542.24365234375
             Y: =243.85009765625
             ZIndex: =15
