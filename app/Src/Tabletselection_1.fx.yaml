@@ -1,33 +1,16 @@
-Tabletselection As screen:
+Tabletselection_1 As screen:
     Height: =911
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
     Width: =1920
 
-    "'Current project page 1' As groupContainer.manualLayoutContainer":
+    "'Current project page 1_1' As groupContainer.manualLayoutContainer":
         Height: =874
         LayoutMode: ="manual"
-        Width: =1921.2628173828125
+        Width: =1920
         Y: =23
         ZIndex: =1
 
-        "'Ellipse 1_1' As image":
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =177
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Image: =image27181363
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Width: =177
-            X: =1714.8525390625
-            ZIndex: =2
-
-        "'Current project 1' As image":
+        "'Current project 1_1' As image":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -44,7 +27,7 @@ Tabletselection As screen:
             Y: =72
             ZIndex: =4
 
-        "'Group 3 1_1' As image":
+        "'Group 3 1_2' As image":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -61,29 +44,7 @@ Tabletselection As screen:
             Y: =15.5
             ZIndex: =5
 
-        Logout_1 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(235.875, 28.501562, 28.501562, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Bold
-            Height: =59
-            LineHeight: =1.182231
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =37.5
-            Text: ="Logout"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =159
-            X: =1725.5
-            Y: =168.5
-            ZIndex: =6
-
-        "'Go Back ➤_1' As label":
+        "'Go Back ➤_2' As label":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             Color: =RGBA(66, 66, 66, 1)
@@ -105,7 +66,7 @@ Tabletselection As screen:
             Y: =185.5
             ZIndex: =7
 
-        "'Rectangle 22' As rectangle":
+        "'Rectangle 22_1' As rectangle":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             DisabledFill: =RGBA(166, 166, 166, 1)
@@ -119,7 +80,7 @@ Tabletselection As screen:
             Y: =316
             ZIndex: =8
 
-    Page As label:
+    Page_1 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         Color: =RGBA(0, 0, 0, 1)
@@ -141,44 +102,7 @@ Tabletselection As screen:
         Y: =276
         ZIndex: =9
 
-    "'Hello, 1' As image":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =65
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: =image2733252
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =170
-        X: =1496
-        Y: =67
-        ZIndex: =10
-
-    msft_Label_1 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Height: =95
-        LineHeight: =1.183
-        PaddingBottom: =9
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =8
-        Size: =60
-        Text: ="{user}"
-        Width: =229
-        X: =1474
-        Y: =132
-        ZIndex: =11
-
-    "'String-label' As label":
+    "'String-label_1' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         Color: =RGBA(51, 51, 51, 1)
@@ -199,40 +123,7 @@ Tabletselection As screen:
         Y: =280
         ZIndex: =12
 
-    msft_Button_6 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =0
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 120, 212, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =50
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        PaddingBottom: =7
-        PaddingLeft: =32
-        PaddingRight: =32
-        PaddingTop: =6
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Size: =24
-        Text: ="Button"
-        Width: =168
-        X: =1723
-        Y: =208
-        ZIndex: =13
-
-    msft_Button_7 As button:
+    msft_Button_12 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
@@ -265,7 +156,7 @@ Tabletselection As screen:
         Y: =196
         ZIndex: =14
 
-    msft_Checkbox As checkbox:
+    msft_Checkbox_1 As checkbox:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         CheckboxBackgroundFill: =RGBA(0, 0, 0, 0)
@@ -291,11 +182,11 @@ Tabletselection As screen:
         Size: =22.5
         Text: ="Display finished projects"
         Width: =419
-        X: =1513
+        X: =1501
         Y: =280
         ZIndex: =15
 
-    msft_Button_8 As button:
+    msft_Button_13 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
@@ -323,7 +214,7 @@ Tabletselection As screen:
         Y: =570
         ZIndex: =16
 
-    msft_Button_9 As button:
+    msft_Button_14 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
@@ -351,7 +242,7 @@ Tabletselection As screen:
         Y: =580
         ZIndex: =17
 
-    msft_ListBox_3 As listbox:
+    msft_ListBox_5 As listbox:
         BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(51, 51, 51, 1)
         Default: ="Value1"
@@ -380,7 +271,7 @@ Tabletselection As screen:
         Y: =339
         ZIndex: =18
 
-    "'Line 3 (1) 1_2' As image":
+    "'Line 3 (1) 1_4' As image":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -393,6 +284,125 @@ Tabletselection As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =1920
-        Y: =230
+        Y: =210
         ZIndex: =19
+
+    logout_Group_3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =25
+
+        "'Ellipse 1_6' As image":
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =156
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =image27181722
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =177
+            X: =1711
+            Y: =7
+            ZIndex: =20
+
+        "'Hello,_5' As label":
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Height: =84
+            LineHeight: =1.182231
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =60
+            Text: ="Hello"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =207
+            X: =1468
+            Y: =34
+            ZIndex: =21
+
+        msft_Label_6 As label:
+            Align: =Align.Right
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            FontWeight: =FontWeight.Bold
+            Height: =75
+            LineHeight: =1.183
+            PaddingBottom: =9
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =8
+            Size: =40
+            Text: =username_input.Text
+            Width: =392
+            X: =1301
+            Y: =109
+            ZIndex: =22
+
+        msft_Button_15 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =44
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            PaddingBottom: =7
+            PaddingLeft: =32
+            PaddingRight: =32
+            PaddingTop: =6
+            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =24
+            Text: =
+            Width: =168
+            X: =1711
+            Y: =163
+            ZIndex: =23
+
+        Image2_3 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =136
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =Logout_2
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =139
+            X: =1730
+            Y: =118
+            ZIndex: =24
 

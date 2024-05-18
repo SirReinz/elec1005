@@ -99,7 +99,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 4,
+    "BindingErrorCount": 6,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -134,9 +134,9 @@
   },
   "ScreenOrder": [
     "Tabletlogin",
-    "Tablettoolbox",
+    "Tablettoolbox_1",
     "Tabletproject_1",
-    "Tabletselection",
+    "Tabletselection_1",
     "Tabletwarehouse",
     "Tabletdiscussion"
   ]
