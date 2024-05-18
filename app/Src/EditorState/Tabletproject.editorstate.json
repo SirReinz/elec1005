@@ -395,7 +395,7 @@
       "MetaDataIDKey": "",
       "Name": "Current project 1_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1021,7 +1021,7 @@
       "MetaDataIDKey": "",
       "Name": "Fix errors before proceeding",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1712,7 +1712,7 @@
       "MetaDataIDKey": "",
       "Name": "Go Back ➤_4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2359,7 +2359,7 @@
       "MetaDataIDKey": "",
       "Name": "goBack_Group_4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 18,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3024,7 +3024,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_13",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3340,7 +3340,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_14",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 13,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3656,7 +3656,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_15",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 14,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3972,7 +3972,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_16",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 15,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4288,7 +4288,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Button_17",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 17,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4595,7 +4595,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Slider",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 16,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
