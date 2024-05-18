@@ -67,7 +67,7 @@
       "MetaDataIDKey": "",
       "Name": "Current project 1_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 23,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1026,7 +1026,7 @@
       "MetaDataIDKey": "",
       "Name": "goBack_Group_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 24,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

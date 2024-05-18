@@ -143,6 +143,22 @@ Tabletselection_1 As screen:
         Y: =339
         ZIndex: =18
 
+    "'Line 3 (1) 1_2' As image":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =25.899276733398438
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =image27182644
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =1920
+        Y: =210
+        ZIndex: =25
+
     logout_Group_3 As group:
         Height: =5
         Width: =5
@@ -228,22 +244,6 @@ Tabletselection_1 As screen:
             X: =1730
             Y: =118
             ZIndex: =24
-
-    "'Line 3 (1) 1_2' As image":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =25.899276733398438
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: =image27182644
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =1920
-        Y: =210
-        ZIndex: =25
 
     goBack_Group_2 As group:
         Height: =5
