@@ -166,7 +166,8 @@ Tablet_register As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
         OnSelect: |
-            =Patch(
+            =If(!IsBlank(username_new.Text && !IsBlank(password_new.Text)),
+            Patch(
                 user_info,
                 Defaults(user_info),
                 {
@@ -174,7 +175,8 @@ Tablet_register As screen:
                     password: password_new.Text
                 }
             );
-            Navigate(Tabletlogin)
+            Navigate(Tabletlogin), Notify("Password and Username must NOT be empty.", NotificationType.Error)
+            )
         PaddingBottom: =7
         PaddingLeft: =32
         PaddingRight: =32
