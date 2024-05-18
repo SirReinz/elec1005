@@ -5327,14 +5327,7 @@
         "PressedBorderColor",
         "PressedColor",
         "PressedFill",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "OnSelect",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "OnSelect",
         "AutoDisableOnSelect",
         "Tooltip",
         "ContentLanguage",
@@ -5650,14 +5643,7 @@
         "PressedBorderColor",
         "PressedColor",
         "PressedFill",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "OnSelect",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "OnSelect",
         "AutoDisableOnSelect",
         "Tooltip",
         "ContentLanguage",
@@ -5964,14 +5950,7 @@
         "RadiusBottomRight",
         "RadiusTopLeft",
         "RadiusTopRight",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Text",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Text",
         "Visible",
         "FocusedBorderColor",
         "HoverBorderColor",
