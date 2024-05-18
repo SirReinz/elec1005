@@ -130,7 +130,7 @@
     "PublishDataLocally": false,
     "PublishResourcesLocally": false,
     "PublishTarget": "player",
-    "UserLocale": "en-US"
+    "UserLocale": "zh-CN"
   },
   "ScreenOrder": [
     "Tabletlogin",
@@ -139,6 +139,7 @@
     "Tabletproject",
     "Tableterrorlist",
     "Tabletwarehouse",
-    "Tabletdiscussion"
+    "Tabletdiscussion",
+    "Screen1"
   ]
 }
