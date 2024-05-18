@@ -33,8 +33,9 @@
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
       "Title": "Title",
-      "tool2": "tool2",
-      "tools": "tools"
+      "tool_name": "tool_name",
+      "tool2": "location",
+      "tools": "amount"
     },
     "DatasetName": "https://unisydneyedu.sharepoint.com/sites/Group14Assignment2",
     "EncodeDataset": true,
