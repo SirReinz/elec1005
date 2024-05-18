@@ -2877,7 +2877,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"called\"}",
+          "NameMap": "{\"Value\":\"Title\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
