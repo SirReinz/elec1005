@@ -506,22 +506,6 @@ Tabletproject_1 As screen:
         Y: =316
         ZIndex: =27
 
-    "'Line 3 (1) 1_3' As image":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =25.899276733398438
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: =image27182644
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =1920
-        Y: =230
-        ZIndex: =28
-
     logout_Group_4 As group:
         Height: =5
         Width: =5
@@ -589,39 +573,6 @@ Tabletproject_1 As screen:
             X: =1301
             Y: =109
             ZIndex: =31
-
-        msft_Button_16 As button:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =0
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            Fill: =RGBA(0, 0, 0, 0)
-            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =44
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            PaddingBottom: =7
-            PaddingLeft: =32
-            PaddingRight: =32
-            PaddingTop: =6
-            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Size: =24
-            Text: =
-            Width: =168
-            X: =1711
-            Y: =163
-            ZIndex: =32
 
         Image2_4 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
