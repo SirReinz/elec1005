@@ -33,6 +33,7 @@
       "ID": "ID",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
+      "ProjectName": "Project Name",
       "ProjectProgress": "Project Progress",
       "Title": "Title"
     },
