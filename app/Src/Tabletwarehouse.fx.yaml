@@ -368,14 +368,14 @@ Tabletwarehouse As screen:
         Items: =Filter(Tools, called = "True")
         OnSelect: |-
             =If(
-                !IsBlank(LookUp(Tools, tool_name = First(ListBox2.SelectedItems).'tool_name')) && !IsBlank(First(ListBox2.SelectedItems).'tool_name'),
+                !IsBlank(LookUp(Tools, tool_name = First(ListBox2.SelectedItems).tool_name)) && !IsBlank(First(ListBox2.SelectedItems).tool_name),
                 Patch(
                     Tools,
-                    LookUp(Tools, tool_name = First(ListBox2.SelectedItems).'tool_name'),
+                    LookUp(Tools, tool_name = First(ListBox2.SelectedItems).tool_name),
                     { called: "True" }
                 );
-                Set(cube_location, LookUp(Tools, tool_name = First(ListBox2.SelectedItems).'tool_name').location) + 
-                Set(search_name, LookUp(Tools, tool_name = First(ListBox2.SelectedItems).'tool_name').tool_name) + 
+                Set(cube_location, LookUp(Tools, tool_name = First(ListBox2.SelectedItems).tool_name).location) + 
+                Set(search_name, LookUp(Tools, tool_name = First(ListBox2.SelectedItems).tool_name).tool_name) + 
                 Reset(ListBox2),
                 Reset(ListBox2)
             )
@@ -387,6 +387,7 @@ Tabletwarehouse As screen:
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
         SelectionFill: =RGBA(0, 120, 212, 1)
+        SelectMultiple: =false
         Size: =13
         Width: =1064
         X: =837
