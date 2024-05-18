@@ -342,7 +342,7 @@
       "MetaDataIDKey": "",
       "Name": "Current project page 1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1553,7 +1553,7 @@
       "MetaDataIDKey": "",
       "Name": "Image2_6",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1772,7 +1772,7 @@
       "MetaDataIDKey": "",
       "Name": "Line 3 (1) 1_4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3110,7 +3110,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Label_7",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
