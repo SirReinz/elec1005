@@ -1420,7 +1420,7 @@
       "MetaDataIDKey": "",
       "Name": "discussion_Group",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 20,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3417,7 +3417,7 @@
       "MetaDataIDKey": "",
       "Name": "goBack_Group",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 19,
+      "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5093,7 +5093,7 @@
       "MetaDataIDKey": "",
       "Name": "logout_Group_15",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 21,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7435,7 +7435,14 @@
         "Y",
         "ZIndex",
         "Visible",
-        "Items",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Items",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "SelectionColor",
         "SelectionFill",
         "HoverBorderColor",
@@ -7484,6 +7491,7 @@
         },
         {
           "Category": "Data",
+          "NameMap": "{\"Value\":\"delay\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },

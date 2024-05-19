@@ -53,7 +53,7 @@ Tabletproject As screen:
         RadiusTopLeft: =8
         RadiusTopRight: =8
         Size: =26.25
-        Text: ="Go to back to Ptojects"
+        Text: ="Go to back to Projects"
         VerticalAlign: =VerticalAlign.Top
         Width: =444
         X: =497

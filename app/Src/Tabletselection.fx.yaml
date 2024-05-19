@@ -1,6 +1,7 @@
 Tabletselection As screen:
     Height: =911
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+    OnVisible: =Reset(ListBox1)
     Width: =1920
 
     Page As label:
