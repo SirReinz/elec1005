@@ -33,7 +33,7 @@ Tabletprojectfile As screen:
         Y: =223
         ZIndex: =8
 
-        "'标题列(_C)1' As dataTableColumn.textualColumn":
+        "'Project name' As dataTableColumn.textualColumn":
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="标题"
             FieldName: ="Title"
@@ -57,7 +57,7 @@ Tabletprojectfile As screen:
             Order: =2
             Text: =ThisItem.'Project Progress'
             Width: =100
-            X: =0
+            X: =78
             Y: =0
             ZIndex: =2
 
@@ -71,7 +71,7 @@ Tabletprojectfile As screen:
             Order: =3
             Text: =ThisItem.'Completion Status'
             Width: =100
-            X: =0
+            X: =459
             Y: =0
             ZIndex: =3
 
@@ -85,7 +85,7 @@ Tabletprojectfile As screen:
         Fill: =RGBA(109, 49, 162, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         FontWeight: =FontWeight.Semibold
-        Height: =71
+        Height: =78
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
@@ -102,9 +102,9 @@ Tabletprojectfile As screen:
         RadiusTopLeft: =8
         RadiusTopRight: =8
         Size: =26.25
-        Text: ="Go back to Mainpage"
+        Text: ="Go back to Project Selection"
         VerticalAlign: =VerticalAlign.Top
-        Width: =518
+        Width: =537
         X: =828
         Y: =243
         ZIndex: =10
@@ -118,7 +118,7 @@ Tabletprojectfile As screen:
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =58
+        Height: =70
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
@@ -133,10 +133,10 @@ Tabletprojectfile As screen:
         RadiusTopLeft: =8
         RadiusTopRight: =8
         Size: =26
-        Text: ="Go back to detailed page"
-        Width: =518
+        Text: ="Go back to " & First(ListBox1.SelectedItems).Name
+        Width: =537
         X: =828
-        Y: =381
+        Y: =368
         ZIndex: =13
 
     "'Line 3 (1) 1_2' As image":
@@ -182,12 +182,12 @@ Tabletprojectfile As screen:
         Height: =58
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverFill: =RGBA(0, 0, 0, 0)
-        Image: ='Current project 1'
+        Image: ='Project files'
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =402
-        X: =62
-        Y: =60
+        Width: =316
+        X: =64
+        Y: =59
         ZIndex: =21
 
     logout_Group_16 As group:
@@ -304,6 +304,24 @@ Tabletprojectfile As screen:
             Y: =138
             ZIndex: =20
 
+    Label2_1 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =89
+        Size: =20
+        Text: |
+            ="Project files for Robot Roy" 
+        Width: =470
+        Y: =416
+        ZIndex: =24
+
     goBack_Group_6 As group:
         Height: =5
         Width: =5
@@ -367,4 +385,204 @@ Tabletprojectfile As screen:
             X: =70
             Y: =125
             ZIndex: =23
+
+    Rectangle2 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =4
+        DisabledFill: =RGBA(230, 230, 230, 1)
+        Fill: =RGBA(230, 230, 230, 1)
+        FocusedBorderThickness: =4
+        Height: =277
+        HoverFill: =RGBA(230, 230, 230, 1)
+        PressedFill: =RGBA(230, 230, 230, 1)
+        Width: =1366
+        Y: =491
+        ZIndex: =25
+
+    Label2_2 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =37
+        Size: =20
+        Text: ="robotroy.py"
+        Underline: =true
+        Width: =148
+        X: =62
+        Y: =505
+        ZIndex: =26
+
+    Label2_3 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =41
+        Size: =20
+        Text: ="robotroyreadme.txt"
+        Underline: =true
+        Width: =254
+        X: =62
+        Y: =557
+        ZIndex: =27
+
+    Label2_4 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =41
+        Size: =20
+        Text: ="wireframe.png"
+        Underline: =true
+        Width: =220
+        X: =62
+        Y: =611
+        ZIndex: =28
+
+    Label2_5 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =37
+        Size: =20
+        Text: ="inputs.in"
+        Underline: =true
+        Width: =148
+        X: =62
+        Y: =671
+        ZIndex: =29
+
+    Image7 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =36
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =python
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =30
+        X: =19
+        Y: =511
+        ZIndex: =30
+
+    Image7_1 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =36
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =file
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =30
+        X: =19
+        Y: =565
+        ZIndex: =31
+
+    Image7_2 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =36
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =png
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =30
+        X: =21
+        Y: =621
+        ZIndex: =32
+
+    Image7_3 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =36
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =file_1
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =30
+        X: =23
+        Y: =671
+        ZIndex: =33
+
+    Rectangle3 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Height: =277
+        HoverFill: =RGBA(0, 0, 0, 1)
+        PressedFill: =RGBA(0, 0, 0, 1)
+        Width: =5
+        X: =672
+        Y: =491
+        ZIndex: =34
+
+    msft_Button_10 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 120, 212, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        FontWeight: =FontWeight.Semibold
+        Height: =55
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        PaddingBottom: =7
+        PaddingLeft: =32
+        PaddingRight: =32
+        PaddingTop: =6
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        Size: =22.5
+        Text: ="→"
+        Width: =99
+        X: =1253
+        Y: =597
+        ZIndex: =35
 

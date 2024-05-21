@@ -800,7 +800,7 @@ Tabletdiscussion As screen:
             Text: ="Days"
             Width: =144
             X: =1726
-            Y: =355
+            Y: =353
             ZIndex: =51
 
     Group2_1 As group:
