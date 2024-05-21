@@ -162,10 +162,11 @@ Tableterrorlist As screen:
             HoverFill: =RGBA(212, 212, 212, 1)
             Items: |
                 =[
-                    "01 Material Management Errors",
-                    "02 Production Issues",
-                    "03 Quality Control Issues",
-                    "04 System Errors"
+                    "N/A",
+                    "02 Material Management Errors",
+                    "03 Production Issues",
+                    "04 Quality Control Issues",
+                    "05 System Errors"
                 ]
             PaddingBottom: =5
             PaddingLeft: =12
@@ -724,6 +725,7 @@ Tableterrorlist As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: =Refresh('Discussion List')
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -767,6 +769,7 @@ Tableterrorlist As screen:
         HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.BackArrow
+        OnSelect: =Navigate(Tabletproject)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
