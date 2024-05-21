@@ -34,7 +34,6 @@ Tabletselection As screen:
         CheckboxSize: =26
         CheckmarkFill: =RGBA(0, 120, 212, 1)
         Color: =RGBA(51, 51, 51, 1)
-        Default: =true
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
@@ -43,6 +42,8 @@ Tabletselection As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(0, 0, 0, 0)
+        OnCheck: =Set(displayFinish, true)
+        OnUncheck: =Set(displayFinish, false)
         PaddingBottom: =12
         PaddingLeft: =8
         PaddingRight: =8
@@ -161,7 +162,7 @@ Tabletselection As screen:
         HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
-        Items: ='Project List'
+        Items: =Filter('Project List', 'Completion Status' = "false")
         LineHeight: =1
         OnSelect: |-
             =If(
