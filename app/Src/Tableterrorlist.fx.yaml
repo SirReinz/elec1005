@@ -569,6 +569,7 @@ Tableterrorlist As screen:
                 ZIndex: =26
 
             "'Hello,_4' As label":
+                Align: =Align.Right
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 Color: =RGBA(0, 0, 0, 1)
@@ -581,7 +582,7 @@ Tableterrorlist As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =60
+                Size: =50
                 Text: ="Hello"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =207
@@ -604,7 +605,7 @@ Tableterrorlist As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =8
-                Size: =40
+                Size: =65
                 Text: =username_input.Text
                 Width: =392
                 X: =1305

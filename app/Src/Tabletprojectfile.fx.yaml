@@ -216,6 +216,7 @@ Tabletprojectfile As screen:
             ZIndex: =16
 
         "'Hello,_8' As label":
+            Align: =Align.Right
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             Color: =RGBA(0, 0, 0, 1)
@@ -228,12 +229,12 @@ Tabletprojectfile As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =40
+            Size: =38
             Text: ="Hello"
             VerticalAlign: =VerticalAlign.Top
             Width: =151
-            X: =1036
-            Y: =29
+            X: =1043
+            Y: =36
             ZIndex: =17
 
         msft_Label_9 As label:
@@ -251,7 +252,7 @@ Tabletprojectfile As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =8
-            Size: =40
+            Size: =50
             Text: =username_input.Text
             Width: =322
             X: =883
@@ -409,6 +410,7 @@ Tabletprojectfile As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         Height: =37
+        OnSelect: =Navigate(Tabletprojectfile_1)
         Size: =20
         Text: ="robotroy.py"
         Underline: =true
@@ -482,6 +484,7 @@ Tabletprojectfile As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverFill: =RGBA(0, 0, 0, 0)
         Image: =python
+        OnSelect: =Navigate(Tabletprojectfile_1)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =30

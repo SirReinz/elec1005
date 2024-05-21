@@ -502,14 +502,14 @@ Tabletproject As screen:
         Y: =32
         ZIndex: =91
 
-    logout_Group_13 As group:
+    logout_Group_23 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =97
 
-        "'Ellipse 1_11' As image":
+        "'Ellipse 1_20' As image":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -527,7 +527,8 @@ Tabletproject As screen:
             Y: =7
             ZIndex: =92
 
-        "'Hello,_10' As label":
+        "'Hello,_19' As label":
+            Align: =Align.Right
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             Color: =RGBA(0, 0, 0, 1)
@@ -540,7 +541,7 @@ Tabletproject As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =60
+            Size: =50
             Text: ="Hello"
             VerticalAlign: =VerticalAlign.Top
             Width: =207
@@ -548,7 +549,7 @@ Tabletproject As screen:
             Y: =34
             ZIndex: =93
 
-        msft_Label_11 As label:
+        msft_Label_20 As label:
             Align: =Align.Right
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
@@ -563,14 +564,14 @@ Tabletproject As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =8
-            Size: =40
+            Size: =65
             Text: =username_input.Text
             Width: =392
             X: =1301
             Y: =109
             ZIndex: =94
 
-        Image2_10 As image:
+        Image2_19 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -588,7 +589,7 @@ Tabletproject As screen:
             Y: =118
             ZIndex: =95
 
-        Button3_8 As button:
+        Button3_17 As button:
             BorderColor: =RGBA(0, 0, 0, 0)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)

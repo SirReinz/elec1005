@@ -3713,7 +3713,14 @@
         "DisabledColor",
         "DisplayMode",
         "Fill",
-        "Align",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Align",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Color",
         "Font",
         "LineHeight",
