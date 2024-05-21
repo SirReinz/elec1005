@@ -1,7 +1,7 @@
 Tabletselection As screen:
     Height: =911
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
-    OnVisible: =Reset(ListBox1)
+    OnVisible: =Reset(ListBox1) + Set(displayFinish, false)
     Width: =1920
 
     Page As label:
@@ -162,7 +162,10 @@ Tabletselection As screen:
         HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
-        Items: =Filter('Project List', 'Completion Status' = "false")
+        Items: |-
+            =If(displayFinish = false,
+            Filter('Project List', 'Completion Status' = "false"), 'Project List'
+            )
         LineHeight: =1
         OnSelect: |-
             =If(
